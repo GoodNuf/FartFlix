@@ -4,20 +4,11 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
-// https://vite.dev/config/
+// vite.config.js
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
 export default defineConfig({
-  plugins: [
-    vue(),
-    vueDevTools(),
-     base: '/Test/',
-      plugins: [vue()],
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
-  },
+  base: '/your-repo-name/', // Replace with your GitHub repo name
+  plugins: [vue()],
 })
-// module.exports = {
-//   publicPath: process.env.NODE_ENV === "production" ? "/Test/",
-// };
