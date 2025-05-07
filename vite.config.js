@@ -9,6 +9,8 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
+     base: '/Test/',
+      plugins: [vue()],
   ],
   resolve: {
     alias: {
