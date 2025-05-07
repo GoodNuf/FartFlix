@@ -5,6 +5,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
+    "serve": "./node_modules/.bin/vue-cli-service serve"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
