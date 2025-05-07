@@ -2,9 +2,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-cli-service build",
-    "deploy": "gh-pages -d dist",
+    "build": "vite build",
     "preview": "vite preview"
+    "deploy": "gh-pages -d dist",
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
