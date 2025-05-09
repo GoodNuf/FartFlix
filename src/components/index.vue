@@ -10,6 +10,10 @@ import Catalog from './Catalog.vue'
 import Terms from './TermsPopup.vue'
 import Status from './ServerStatus.vue'
 import { ref } from 'vue';
+import Dialog from 'primevue/dialog';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import Papa from 'papaparse';
 const Statu = ref(null);
 const openStatus = () => {
   Statu.value.openModal();
@@ -19,12 +23,12 @@ const openLog = () => {
   Log.value.openModal();
 };
 const Cat = ref(null);
-const openMovies = () => {
-  Cat.value.Movies();
-};
-const openShows = () => {
-  Cat.value.TV();
-};
+// const openMovies = () => {
+//   Cat.value.Movies();
+// };
+// const openShows = () => {
+//   Cat.value.TV();
+// };
 import SignUp from './SignUp.vue'
 const Sign = ref(null);
 const openSignUp = (txt) => {
@@ -35,6 +39,46 @@ const openPopup = () => {
   Pop.value.openModal();
   closeModal();
 };
+const dialogVisibleMovies = ref(false);
+const dialogVisibleShows = ref(false);
+const tableData = ref([]);
+const columns = ref([]);
+const dataCache = ref({});
+const loadCSV = async (filePath) => {
+  if (dataCache.value[filePath]) {
+    const cachedData = dataCache.value[filePath];
+    tableData.value = cachedData.data;
+    columns.value = cachedData.columns;
+    return;
+  }
+  const response = await fetch(filePath);
+  const csvText = await response.text();
+  Papa.parse(csvText, {
+    header: true,
+    skipEmptyLines: true,
+    complete: (results) => {
+      const parsedData = results.data;
+      const parsedColumns = Object.keys(parsedData[0]).map((key) => ({
+        field: key,
+        header: key,
+      }));
+      dataCache.value[filePath] = {
+        data: parsedData,
+        columns: parsedColumns,
+      };
+      tableData.value = parsedData;
+      columns.value = parsedColumns;
+    },
+  });
+};
+const openMovies = async () => {
+  dialogVisibleMovies.value = true;
+  await loadCSV('src/assets/Movies.csv');
+};
+const openShows = async () => {
+  dialogVisibleShows.value = true;
+  await loadCSV('src/assets/Shows.csv');
+};
 </script>
 <template>
   <WelcomeItem>
@@ -42,10 +86,9 @@ const openPopup = () => {
       <PlansIcon />
     </template>
     <template #heading>Plans</template>
-    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Monthly</h4>(Access to 900+ movies & 6,000+ episodes of TV + 1 free monthly request): $<span style="color:#69CCC9;">6</span>/month<sup>1</sup></br>
-    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Annual</h4>(Access to 900+ movies & 6,000+ episodes of TV + 1 free monthly request): $<span style="color:#69CCC9;">55</span>/year<sup>1</sup>
+    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Monthly</h4>(Access to 900+ movies & 6,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">6</span>/month<sup>1</sup></br>
+    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Annual</h4>(Access to 900+ movies & 6,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">55</span>/year<sup>1</sup>
   </WelcomeItem>
-
   <WelcomeItem>
     <template #icon>
       <CatalogIcon />
@@ -55,16 +98,13 @@ const openPopup = () => {
     <span> | </span>
     <a href="#" @click.prevent="openShows" style="color: #69CCC9;">Shows</a>
   </WelcomeItem>
-
   <WelcomeItem>
     <template #icon>
       <GetStartedIcon />
     </template>
     <template #heading>Get Started</template>
     <a href="#" @click.prevent="openSignUp" style="color: #69CCC9;">Sign up and start your 30 day free trial</a><sup>2</sup><span> | </span><a href="#" @click.prevent='openPopup("Terms and Conditions","h1","b1","h2","b2","h3","b3","h4","b4","h5","b5","h6","b6")'>Terms and Conditions</a>
-    <!-- <a href="#" @click.prevent="openSignUp" style="color: #69CCC9;">Sign up and start your 30 day free trial</a><sup>2</sup><span> | </span><a style="color: #818181;" href="#" @click.prevent='openPopup("Terms and Conditions","h1","b1","h2","b2","h3","b3","h4","b4","h5","b5","h6","b6")'>Terms and Conditions</a> -->
   </WelcomeItem>
-
   <WelcomeItem>
     <template #icon>
       <MemberIcon />
@@ -72,9 +112,8 @@ const openPopup = () => {
     <template #heading>Already a FartFlix+ Member?</template>
     <a href="https://watch.fartflix.com" target="_blank" rel="noopener">Start streaming</a><span> | </span>
     <a href="https://request.fartflix.com" target="_blank" rel="noopener">Make a request</a><span> | </span>
-    <a href="#" @click.prevent="openStatus" style="color: #69CCC9;">Server status</a><span> | </span>
-    <a href="#" @click.prevent="openLog" style="color: #818181;">Manage account</a>
-    
+    <a href="#" @click.prevent="openStatus" style="color: #69CCC9;">Server status</a>
+    <!-- <span> | </span><a href="#" @click.prevent="openLog" style="color: #818181;">Manage account</a> -->
   </WelcomeItem>
   <Terms>
     <template #txt>
@@ -86,4 +125,40 @@ const openPopup = () => {
   <Catalog ref="Cat"/>
   <SignUp ref="Sign"/>
   <Terms ref="Pop"/>
+  <Dialog v-model:visible="dialogVisibleMovies" header="Movies" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
+    <DataTable :value="tableData" scrollable scrollHeight="flex" tableStyle="min-width: 50rem" removableSort class="custom-table">
+      <Column v-for="col in columns" :key="col.field" :field="col.field" :header="col.header" sortable />
+    </DataTable>
+  </Dialog>
+  <Dialog v-model:visible="dialogVisibleShows" header="TV Shows" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
+    <DataTable :value="tableData" scrollable scrollHeight="flex" tableStyle="min-width: 50rem;" removableSort class="custom-table">
+      <Column v-for="col in columns" :key="col.field" :field="col.field" :header="col.header" sortable />
+    </DataTable>
+  </Dialog>
 </template>
+<style>
+.p-dialog-header {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border-bottom: none !important;
+}
+.custom-dialog .p-dialog-content {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  padding:0;
+}
+.custom-table {
+  background-color: transparent !important;
+  color: white !important;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.custom-table .p-datatable-tbody > tr {
+  background-color: transparent !important;
+  color: white !important;
+}
+.custom-table .p-datatable-thead > tr > th {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+</style>

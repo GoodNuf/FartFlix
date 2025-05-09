@@ -31,3 +31,11 @@ defineExpose({
     </modal>
   </Teleport>
 </template>
+<style>
+.modal-body {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+</style>
