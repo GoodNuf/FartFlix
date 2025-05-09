@@ -1,7 +1,10 @@
 <script setup>
 import modal from './ModalChild.vue'
 import { ref } from 'vue'
-import { defineExpose } from 'vue';
+import { defineExpose } from 'vue';import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import ColumnGroup from 'primevue/columngroup';
+import Row from 'primevue/row';   
 const showModal = ref(false)
 const txt = ref('Loading...');
 const header = ref('Catalog');

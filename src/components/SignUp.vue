@@ -230,9 +230,8 @@ input:active, button:active{
   border-radius: 6px;
   transition: background-color 0.2s ease, color 0.2s ease;
   user-select: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 label:hover{
   background-color: #585858;
