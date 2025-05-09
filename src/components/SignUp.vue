@@ -157,13 +157,15 @@ const newUser = async () => {
           </div>
         </div>
         <Form id="signUpForm" v-slot="{values}" :resolver="resolver" :initialValues="initialValues" @submit="onFormSubmit(values)" class="flex flex-col gap-4">
-            <RadioButton v-model="plan" inputId="Trial" name="plan" value="Trial" style="display: none;" @change="cost = 0"/>
+          <div class="label-container">
+            <RadioButton v-model="plan" inputId="Trial" name="plan" value="Trial" style="display: none;" @change="cost=0"/>
             <label for="Trial" :class="{active:plan==='Trial'}" style="margin-right: 8px;">30 Day Free Trial</label>
-            <RadioButton v-model="plan" inputId="Monthly" name="plan" value="Monthly" style="display: none;" @change="cost = 6"/>
+            <RadioButton v-model="plan" inputId="Monthly" name="plan" value="Monthly" style="display: none;" @change="cost=6"/>
             <label for="Monthly" :class="{active:plan==='Monthly'}">Monthly ($6/month)</label>
-            <RadioButton v-model="plan" inputId="Annual" name="plan" value="Annual" style="display: none;" @change="cost = 55"/>
+            <RadioButton v-model="plan" inputId="Annual" name="plan" value="Annual" style="display: none;" @change="cost=55"/>
             <label for="Annual" :class="{active:plan==='Annual'}" style="margin-left: 8px;">Annual ($55/year)</label>
-            <br><br>
+          </div>
+          <br>
           <FloatLabel variant="on">
             <InputText v-model="fname" type="text" name="fname" style="width:100%;"required/>
             <label style="background-color: transparent;padding: 0;color:#ffffff96" for="fname">First Name</label>
@@ -195,7 +197,6 @@ const newUser = async () => {
 </template>
 <style>
 input, button{
-  /* margin:8px 0; */
   background-color: #303030!important;
   color:#ffffff96!important;
   --p-inputtext-color:white!important;
@@ -213,15 +214,25 @@ input:active, button:active{
   color: #585858!important;
   --p-inputtext-color:white!important;
 }
-label{
-  user-select: none;
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 4px;
+}
+.label-container label {
+  flex: 1 1 fit-content;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
   background-color: #303030;
-  padding:8px;
   border-radius: 6px;
-  transition: background-color 0.2s ease,color 0.2s ease;
-  display: inline-block; /* Ensure labels behave like blocks */
-  white-space: nowrap; /* Prevent text from wrapping by default */
-  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+  transition: background-color 0.2s ease, color 0.2s ease;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 label:hover{
   background-color: #585858;
