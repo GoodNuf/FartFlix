@@ -73,7 +73,7 @@ const loadCSV = async (filePath) => {
 };
 const openMovies = async () => {
   dialogVisibleMovies.value = true;
-  await loadCSV('/Shows.csv');
+  await loadCSV('/Movies.csv');
 };
 const openShows = async () => {
   dialogVisibleShows.value = true;
