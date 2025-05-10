@@ -125,12 +125,12 @@ const openShows = async () => {
   <Catalog ref="Cat"/>
   <SignUp ref="Sign"/>
   <Terms ref="Pop"/>
-  <Dialog v-model:visible="dialogVisibleMovies" header="Movies" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
+  <Dialog v-model:visible="dialogVisibleMovies" :header="'Movies ('+tableData.length+')'" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
     <DataTable :value="tableData" scrollable scrollHeight="flex" tableStyle="min-width: 50rem" removableSort class="custom-table">
       <Column v-for="col in columns" :key="col.field" :field="col.field" :header="col.header" sortable />
     </DataTable>
   </Dialog>
-  <Dialog v-model:visible="dialogVisibleShows" header="TV Shows" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
+  <Dialog v-model:visible="dialogVisibleShows" :header="'Shows ('+tableData.length+')'" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
     <DataTable :value="tableData" scrollable scrollHeight="flex" tableStyle="min-width: 50rem;" removableSort class="custom-table">
       <Column v-for="col in columns" :key="col.field" :field="col.field" :header="col.header" sortable />
     </DataTable>
