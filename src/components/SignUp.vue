@@ -40,8 +40,16 @@ const password = ref('');
 const cpassword = ref('');
 const loading = ref(false);
 import Popup from './Popup.vue'
-const PopT = ref(null);
+const Pop = ref(null);
 const openPopup = (txt,txt2) => {
+
+  Pop.value.openModal(txt,txt2);
+
+  closeModal();
+
+};
+const PopT = ref(null);
+const openTerms = (txt,txt2) => {
   PopT.value.openModal(txt,txt2);
 };
 const onFormSubmit = async () => {
@@ -183,7 +191,7 @@ const newUser = async () => {
             <label style="background-color: transparent;padding: 0;color:#ffffff96" for="cpassword">Confirm Password</label>
           </FloatLabel>
           <Checkbox v-model="checked" :invalid="!checked"  binary required style="--p-checkbox-checked-background:#69ccc98f;--p-checkbox-checked-hover-background:#69ccc9d2;--p-checkbox-border-color:none;"/>
-          <label style="background-color: transparent;padding-left: 8px;color:#ffffff96" for="checked">I agree to the</label><a href="#" @click.prevent='openPopup()'>Terms and Conditions</a>
+          <label style="background-color: transparent;padding-left: 8px;color:#ffffff96" for="checked">I agree to the</label><a href="#" @click.prevent='openTerms()'>Terms and Conditions</a>
           <br><br>
           <FloatLabel style="display: none;">
             <InputText v-model.number="cost" name="cost" style="width:100%;"/>
