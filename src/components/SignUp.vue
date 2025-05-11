@@ -13,7 +13,7 @@ const showModal = ref(false)
 const txt = ref('Loading...');
 const backgroundColour = ref('#69ccc971');
 const colour = ref('white');
-const plan = ref('Trial');
+const plan = ref('Monthly');
 const openModal = () => {
   showModal.value = true;
   txt.value='Sign Up';
@@ -48,6 +48,11 @@ const onFormSubmit = async () => {
     console.log(password.value, cpassword.value);
     return;
   }
+  else if (plan.value==='Trial')
+  {
+    openPopup('Sorry!','Free trials can now only be requested by contacting support@fartflix.com. We apologize for the inconvenience.');
+    return;
+  }
   const form = document.getElementById('signUpForm');
   form.style.display = 'none';
   const loader = document.getElementById('spinner');
@@ -55,11 +60,6 @@ const onFormSubmit = async () => {
   loading.value = true;
   const isUserCreated = await newUser();
   if (isUserCreated) {
-    console.log("plan: ["+plan.value+"]");
-    console.log("fname: ["+fname.value+"]");
-    console.log("email: ["+email.value+"]");
-    console.log("password: ["+password.value+"]");
-    console.log("cpassword: ["+cpassword.value+"]");
     if(plan.value==='Trial')
     emailjs.sendForm('apple','trial',form,'rQQm5NSHaWQQ46E1J')
     else
@@ -102,7 +102,6 @@ const newUser = async () => {
           PasswordResetProviderId: data.Policy.PasswordResetProviderId,
         }),
       });
-      console.log(`NEWUSER FUNCTION [ID: ${data.Id} EMAIL: ${email.value} NAME: ${fname.value}]`);
       return true;
     }
     else if(response.ok&&plan.value==='Monthly'||plan.value==='Annual')
@@ -125,7 +124,6 @@ const newUser = async () => {
           PasswordResetProviderId: data.Policy.PasswordResetProviderId,
         }),
       });
-      console.log(`NEWUSER FUNCTION [ID: ${data.Id} EMAIL: ${email.value} NAME: ${fname.value}]`);
       return true;
     }
     else

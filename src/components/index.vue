@@ -103,7 +103,7 @@ const openShows = async () => {
       <GetStartedIcon />
     </template>
     <template #heading>Get Started</template>
-    <a href="#" @click.prevent="openSignUp" style="color: #69CCC9;">Sign up and start your 30 day free trial</a><sup>2</sup><span> | </span><a href="#" @click.prevent='openPopup("Terms and Conditions","h1","b1","h2","b2","h3","b3","h4","b4","h5","b5","h6","b6")'>Terms and Conditions</a>
+    <a href="#" @click.prevent="openSignUp" style="color: #69CCC9;">Sign up</a><sup>2</sup><span> | </span><a href="#" @click.prevent='openPopup("Terms and Conditions","h1","b1","h2","b2","h3","b3","h4","b4","h5","b5","h6","b6")'>Terms and Conditions</a>
   </WelcomeItem>
   <WelcomeItem>
     <template #icon>
