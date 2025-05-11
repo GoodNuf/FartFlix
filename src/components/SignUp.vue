@@ -6,6 +6,9 @@ import RadioButton from 'primevue/radiobutton';
 import Password from 'primevue/password';
 import { Form } from '@primevue/forms';
 import FloatLabel from 'primevue/floatlabel';
+import Checkbox from 'primevue/checkbox';
+import Terms from './TermsPopup.vue'
+import CheckboxGroup from 'primevue/checkboxgroup';
 import { ref } from 'vue'
 import { defineExpose } from 'vue';
 import emailjs from 'emailjs-com' 
@@ -37,10 +40,9 @@ const password = ref('');
 const cpassword = ref('');
 const loading = ref(false);
 import Popup from './Popup.vue'
-const Pop = ref(null);
+const PopT = ref(null);
 const openPopup = (txt,txt2) => {
-  Pop.value.openModal(txt,txt2);
-  closeModal();
+  PopT.value.openModal(txt,txt2);
 };
 const onFormSubmit = async () => {
   if (password.value !== cpassword.value) {
@@ -180,6 +182,9 @@ const newUser = async () => {
             <Password v-model="cpassword" :feedback="false" toggleMask fluid name="cpassword"required/>
             <label style="background-color: transparent;padding: 0;color:#ffffff96" for="cpassword">Confirm Password</label>
           </FloatLabel>
+          <Checkbox v-model="checked" :invalid="!checked"  binary required style="--p-checkbox-checked-background:#69ccc98f;--p-checkbox-checked-hover-background:#69ccc9d2;--p-checkbox-border-color:none;"/>
+          <label style="background-color: transparent;padding-left: 8px;color:#ffffff96" for="checked">I agree to the</label><a href="#" @click.prevent='openPopup()'>Terms and Conditions</a>
+          <br><br>
           <FloatLabel style="display: none;">
             <InputText v-model.number="cost" name="cost" style="width:100%;"/>
           </FloatLabel>
@@ -192,6 +197,7 @@ const newUser = async () => {
     </modal>
   </Teleport>
   <Popup ref="Pop"/>
+  <Terms ref="PopT"/>
 </template>
 <style>
 input, button{
@@ -218,6 +224,10 @@ input:active, button:active{
   width: 100%;
   box-sizing: border-box;
   gap: 4px;
+}
+input[type="checkbox"]:checked {
+  background-color: #69ccc9 !important; /* Desired background color */
+  border: none !important; /* Disable the border */
 }
 .label-container label {
   flex: 1 1 fit-content;
@@ -254,6 +264,10 @@ label.active:active{
 .p-floatlabel{
   margin:20px 0;
   margin-top: 0;
+}
+input[type="checkbox"]:checked {
+  background-color: #69ccc9 !important; /* Change this to your desired color */
+  border-color: #69ccc9 !important; /* Optional: Change the border color */
 }
 .spring-spinner, .spring-spinner * {
       box-sizing: border-box;
