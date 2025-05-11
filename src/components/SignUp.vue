@@ -190,8 +190,8 @@ const newUser = async () => {
             <Password v-model="cpassword" :feedback="false" toggleMask fluid name="cpassword"required/>
             <label style="background-color: transparent;padding: 0;color:#ffffff96" for="cpassword">Confirm Password</label>
           </FloatLabel>
-          <Checkbox v-model="checked" :invalid="!checked"  binary required style="--p-checkbox-checked-background:#69ccc98f;--p-checkbox-checked-hover-background:#69ccc9d2;--p-checkbox-border-color:none;"/>
-          <label style="background-color: transparent;padding-left: 8px;color:#ffffff96" for="checked">I agree to the</label><a href="#" @click.prevent='openTerms()'>Terms and Conditions</a>
+          <Checkbox inputId="agree" v-model="checked" :invalid="!checked"  binary required style="--p-checkbox-checked-background:#69ccc98f;--p-checkbox-checked-hover-background:#69ccc9d2;--p-checkbox-hover-border-color:#585858"/>
+          <label style="background-color: transparent;padding-left: 10px;color:#ffffff96" for="agree">I agree to the</label><a href="#" @click.prevent='openTerms()'>Terms and Conditions</a>
           <br><br>
           <FloatLabel style="display: none;">
             <InputText v-model.number="cost" name="cost" style="width:100%;"/>
