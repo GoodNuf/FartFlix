@@ -1,4 +1,5 @@
-Name,Year,Parental Rating,Community Rating
+Name,Year,ParentalRating,CommunityRating
+Ironheart,2025-Present,CA-14+,5.9
 Adolescence,2025,CA-18+,7.7
 SNL50: Beyond Saturday Night,2025,TV-MA,6
 The Sticky,2024-Present,R21,7.2
@@ -11,14 +12,16 @@ Fight Night: The Million Dollar Heist,2024,CA-18+,7.2
 Doctor Who (2023),2024-Present,CA-PG,6.6
 Fallout,2024-Present,TV-MA,7.9
 A Gentleman in Moscow,2024,CA-18+,7.3
+Shōgun,2024-Present,TV-MA,8.5
 Mr. & Mrs. Smith,2024-Present,CA-18+,6.5
 The Curse,2023-2024,TV-MA,4.9
+Secret Invasion,2023,TV-14,6.4
 BEEF,2023-Present,TV-MA,7.1
-The Last of Us,2023-Present,CA-18+,8.6
+1923,2022-2025,18+,8
+Star Wars: Andor,2022-Present,CA-14+,8.2
 Monster (2022),2022-Present,TV-MA,6.7
-Andor,2022-Present,TV-14,7.9
-The Rehearsal,2022-Present,TV-MA,6.6
 The Bear,2022-Present,CA-18+,8.2
+Ms. Marvel,2022,TV-14,6.1
 The Dropout,2022,TV-MA,7.3
 FROM,2022-Present,CA-18+,8.197
 Severance,2022-Present,CA-18+,8.4
@@ -30,12 +33,14 @@ Squid Game,2021-Present,CA-18+,7.859
 Only Murders in the Building,2021-Present,CA-18+,8.5
 Loki,2021-2023,TV-14,8.1
 Invincible,2021-Present,TV-MA,8
+The Falcon and The Winter Soldier,2021,14+,7.3
 WandaVision,2021,TV-14,7.6
 The Queen's Gambit,2020,TV-MA,8.5
 Raised by Wolves (2020),2020-2022,TV-MA,7.4
 Space Force,2020-2022,TV-MA,6.3
+Tiger King,2020-2021,TV-MA,6.3
 The Mandalorian,2019-Present,TV-14,8.5
-The Boys,2019-Present,TV-MA,8.4
+The Boys,2019-Present,CA-18+,8.5
 Chernobyl,2019,CA-14+,8.683
 Dead to Me,2019-2022,TV-MA,7.7
 I Think You Should Leave with Tim Robinson,2019-Present,TV-MA,6.853
@@ -51,6 +56,7 @@ Cobra Kai,2018-2025,TV-14,7.2
 Queer Eye,2018-Present,TV-14,7.412
 Dark,2017-2020,TV-14,8.2
 MINDHUNTER,2017-2019,TV-MA,8.4
+Manhunt (2017),2017-2020,TV-14,7.5
 Ozark,2017-2022,TV-MA,8.214
 13 Reasons Why,2017-2020,TV-MA,7.2
 Santa Clarita Diet,2017-2019,TV-MA,7.8
@@ -64,21 +70,23 @@ Better Call Saul,2015-2022,CA-PG,8.7
 The Man in the High Castle,2015-2019,TV-PG,8.1
 BoJack Horseman,2014-2020,TV-MA,7.9
 The Leftovers,2014-2017,TV-MA,8
-Last Week Tonight with John Oliver,2014-Present,CA-14+,7.884
 Fargo,2014-Present,TV-MA,8.6
 Rick and Morty,2013-Present,TV-MA,8.8
 Brooklyn Nine-Nine,2013-2021,TV-14,8.213
-Orange Is the New Black,2013-2019,TV-MA,7.9
+Peaky Blinders,2013-2022,TV-MA,8.5
 Nathan for You,2013-2017,TV-14,7.3
 Utopia,2013-2014,TV-MA,8.3
 Black Mirror,2011-Present,TV-MA,8.5
 Portlandia,2011-2018,TV-14,6.9
 Bob's Burgers,2011-Present,CA-14+,7.8
+The Walking Dead,2010-2022,TV-MA,7.9
+Downton Abbey,2010-2015,TV-14,8.8
 Community,2009-2015,TV-PG,7.989
 Parks and Recreation,2009-2015,CA-PG,8.022
 Party Down,2009-2023,TV-MA,7.1
 Star Wars: The Clone Wars,2008-2020,TV-PG,8.4
 Breaking Bad,2008-2013,CA-14+,8.921
+Mad Men,2007-2015,TV-14,8.2
 30 Rock,2006-2013,CA-G,7.424
 The IT Crowd,2006-2010,TV-14,8.7
 The Office,2005-2013,CA-14+,8.576
