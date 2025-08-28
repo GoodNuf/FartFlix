@@ -167,7 +167,7 @@ const newUser = async () => {
         <Form id="signUpForm" v-slot="{values}" :resolver="resolver" :initialValues="initialValues" @submit="onFormSubmit(values)" class="flex flex-col gap-4">
           <div class="label-container">
             <RadioButton v-model="plan" inputId="Trial" name="plan" value="Trial" style="display: none;" @change="cost=0"/>
-            <label for="Trial" :class="{active:plan==='Trial'}" style="margin-right: 8px;">30 Day Free Trial</label>
+            <label for="Trial" :class="{active:plan==='Trial'}" style="margin-right: 8px;">7 Day Free Trial</label>
             <RadioButton v-model="plan" inputId="Monthly" name="plan" value="Monthly" style="display: none;" @change="cost=6"/>
             <label for="Monthly" :class="{active:plan==='Monthly'}">Monthly ($6/month)</label>
             <RadioButton v-model="plan" inputId="Annual" name="plan" value="Annual" style="display: none;" @change="cost=55"/>

@@ -1,13 +1,15 @@
 <script setup>
 import TheWelcome from './components/index.vue'
+import Switcher from './components/Switcher.vue';
 </script>
 
 <template>
-  
+  <!-- <Switcher /> -->
   <header>
     <img alt="FartFlix+" class="logo" src="./assets/logo.svg" width="125" height="125" />
   </header>
   <main>
+    
     <TheWelcome />
   </main>
 </template>

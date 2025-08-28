@@ -1,99 +1,122 @@
-Name,Year,ParentalRating,CommunityRating
-Ironheart,2025-Present,CA-14+,5.9
-Adolescence,2025,CA-18+,7.7
-SNL50: Beyond Saturday Night,2025,TV-MA,6
-The Sticky,2024-Present,R21,7.2
-Star Wars: Skeleton Crew,2024-Present,TV-PG,6.9
-Hysteria!,2024-Present,TV-MA,6.8
-Nobody Wants This,2024-Present,CA-18+,7.6
-The Penguin,2024,CA-18+,8.5
-Agatha All Along,2024,CA-14+,7.7
-Fight Night: The Million Dollar Heist,2024,CA-18+,7.2
-Doctor Who (2023),2024-Present,CA-PG,6.6
-Fallout,2024-Present,TV-MA,7.9
-A Gentleman in Moscow,2024,CA-18+,7.3
-Shōgun,2024-Present,TV-MA,8.5
-Mr. & Mrs. Smith,2024-Present,CA-18+,6.5
-The Curse,2023-2024,TV-MA,4.9
-Secret Invasion,2023,TV-14,6.4
-BEEF,2023-Present,TV-MA,7.1
-1923,2022-2025,18+,8
-Star Wars: Andor,2022-Present,CA-14+,8.2
-Monster (2022),2022-Present,TV-MA,6.7
-The Bear,2022-Present,CA-18+,8.2
-Ms. Marvel,2022,TV-14,6.1
-The Dropout,2022,TV-MA,7.3
-FROM,2022-Present,CA-18+,8.197
-Severance,2022-Present,CA-18+,8.4
-The Woman in the House Across the Street from the Girl in the Window,2022,TV-MA,6.7
-Station Eleven,2021-2022,TV-MA,7.1
-Abbott Elementary,2021-Present,TV-PG,7.5
-Dopesick,2021,TV-MA,8.018
-Squid Game,2021-Present,CA-18+,7.859
-Only Murders in the Building,2021-Present,CA-18+,8.5
-Loki,2021-2023,TV-14,8.1
-Invincible,2021-Present,TV-MA,8
-The Falcon and The Winter Soldier,2021,14+,7.3
-WandaVision,2021,TV-14,7.6
-The Queen's Gambit,2020,TV-MA,8.5
-Raised by Wolves (2020),2020-2022,TV-MA,7.4
-Space Force,2020-2022,TV-MA,6.3
-Tiger King,2020-2021,TV-MA,6.3
-The Mandalorian,2019-Present,TV-14,8.5
-The Boys,2019-Present,CA-18+,8.5
-Chernobyl,2019,CA-14+,8.683
-Dead to Me,2019-2022,TV-MA,7.7
-I Think You Should Leave with Tim Robinson,2019-Present,TV-MA,6.853
-The Twilight Zone,2019-2020,CA-14+,6.679
-The Umbrella Academy,2019-2024,TV-14,7.9
-Dirty John,2018-2020,TV-14,6.3
-Narcos: Mexico,2018-2021,TV-MA,7.8
-Patriot Act with Hasan Minhaj,2018-2020,TV-MA,8
-Maniac (2018),2018,TV-14,6.8
-You,2018-Present,TV-MA,7.5
-Explained,2018-2021,TV-14,6.8
-Cobra Kai,2018-2025,TV-14,7.2
-Queer Eye,2018-Present,TV-14,7.412
-Dark,2017-2020,TV-14,8.2
-MINDHUNTER,2017-2019,TV-MA,8.4
-Manhunt (2017),2017-2020,TV-14,7.5
-Ozark,2017-2022,TV-MA,8.214
-13 Reasons Why,2017-2020,TV-MA,7.2
-Santa Clarita Diet,2017-2019,TV-MA,7.8
-Westworld,2016-2022,TV-MA,8.2
-The Good Place,2016-2020,CA-14+,8
-Atlanta,2016-2022,CA-14+,8.012
-Stranger Things,2016-Present,TV-14,8.5
-Show Me a Hero,2015,CA-14+,7.4
-Mr. Robot,2015-2019,TV-MA,8.3
-Better Call Saul,2015-2022,CA-PG,8.7
-The Man in the High Castle,2015-2019,TV-PG,8.1
-BoJack Horseman,2014-2020,TV-MA,7.9
-The Leftovers,2014-2017,TV-MA,8
-Fargo,2014-Present,TV-MA,8.6
-Rick and Morty,2013-Present,TV-MA,8.8
-Brooklyn Nine-Nine,2013-2021,TV-14,8.213
-Peaky Blinders,2013-2022,TV-MA,8.5
-Nathan for You,2013-2017,TV-14,7.3
-Utopia,2013-2014,TV-MA,8.3
-Black Mirror,2011-Present,TV-MA,8.5
-Portlandia,2011-2018,TV-14,6.9
-Bob's Burgers,2011-Present,CA-14+,7.8
-The Walking Dead,2010-2022,TV-MA,7.9
-Downton Abbey,2010-2015,TV-14,8.8
-Community,2009-2015,TV-PG,7.989
-Parks and Recreation,2009-2015,CA-PG,8.022
-Party Down,2009-2023,TV-MA,7.1
-Star Wars: The Clone Wars,2008-2020,TV-PG,8.4
-Breaking Bad,2008-2013,CA-14+,8.921
-Mad Men,2007-2015,TV-14,8.2
-30 Rock,2006-2013,CA-G,7.424
-The IT Crowd,2006-2010,TV-14,8.7
-The Office,2005-2013,CA-14+,8.576
-Avatar: The Last Airbender,2005-2008,TV-Y7,9
-House,2004-2012,TV-14,8.8
-Lost,2004-2010,CA-14+,7.941
-Arrested Development,2003-2019,TV-MA,7.9
-The Wire,2002-2008,CA-18+,8.6
-The Sopranos,1999-2007,CA-18+,8.648
-Saturday Night Live,1975-Present,CA-PG,6.951
+Name,Year,Genres
+Alien: Earth,2025-Present,Science Fiction
+UNTAMED,2025-Present,Drama; Thriller; Mystery
+Ironheart,2025-Present,Science Fiction; Fantasy; Drama; Adventure; Action
+Adolescence,2025,Mini-Series; Drama; Crime; Thriller
+SNL50: Beyond Saturday Night,2025,Documentary
+The Sticky,2024-Present,Comedy; Drama
+Star Wars: Skeleton Crew,2024-Present,Science Fiction; Adventure
+Hysteria! (2024),2024,Drama; Thriller
+Nobody Wants This.,2024-Present,Drama; Comedy; Romance
+The Penguin,2024,Drama; Crime
+Agatha All Along,2024,Science Fiction; Mini-Series; Fantasy; Comedy; Adventure; Action
+Fight Night: The Million Dollar Heist,2024,Mini-Series; Drama; Crime
+Doctor Who (2023),2024-Present,Science Fiction; Fantasy; Action
+Fallout,2024-Present,Science Fiction; Drama; Action; War
+A Gentleman in Moscow,2024,Mini-Series; Fantasy; Drama; Suspense; History
+Shōgun,2024-Present,Drama; Adventure; Action; History; War
+Mr. & Mrs. Smith (2024),2024-Present,Drama; Crime; Comedy; Action; Thriller
+The Curse,2023-2024,Drama; Comedy
+Gen V,2023-Present,Science Fiction; Drama; Action
+Secret Invasion,2023,Science Fiction; Fantasy; Drama; Adventure; Action; Thriller
+Love & Death,2023,Mini-Series; Drama; Crime
+BEEF,2023-Present,Drama; Comedy
+1923,2022-2025,Drama; Western
+Wednesday,2022-Present,Fantasy; Drama; Mystery
+Star Wars: Andor,2022-Present,Sci-Fi & Fantasy; Action & Adventure; Drama
+Monster (2022),2022-Present,Family; Crime; Thriller
+The Lord of the Rings: The Rings of Power,2022-Present,Fantasy; Drama; Adventure; Action; Mystery
+The Bear,2022-Present,Drama; Comedy
+Ms. Marvel,2022,Science Fiction; Fantasy; Comedy; Adventure; Action
+The Boys Presents: Diabolical,2022,Science Fiction; Drama; Comedy; Animation; Adventure; Action
+The Dropout,2022,Mini-Series; Drama
+FROM,2022-Present,Science Fiction; Horror; Drama; Thriller; Mystery
+Severance,2022-Present,Drama; Mystery; Sci-Fi & Fantasy
+The Woman in the House Across the Street from the Girl in the Window,2022,Drama; Crime; Comedy; Mystery
+Peacemaker,2022-Present,Science Fiction; Comedy; Action
+Station Eleven,2021-2022,Science Fiction; Mini-Series; Drama; Adventure; Thriller; Mystery
+Abbott Elementary,2021-Present,Comedy
+Dopesick,2021,Mini-Series; Drama; Crime
+Squid Game,2021-Present,Action & Adventure; Mystery; Drama
+Only Murders in the Building,2021-Present,Drama; Crime; Comedy; Thriller; Mystery
+Loki,2021-2023,Science Fiction; Fantasy; Drama; Adventure; Action; Mystery
+Invincible,2021-Present,Action; Animation; Drama; Science Fiction; Thriller
+The Falcon and The Winter Soldier,2021,Science Fiction; Mini-Series; Drama; Adventure; Action
+WandaVision,2021,Science Fiction; Mini-Series; Fantasy; Drama; Comedy; Adventure; Action
+The Queen's Gambit,2020,Drama; History
+Raised by Wolves (2020),2020-2022,Science Fiction; Fantasy; Drama; Thriller
+Space Force,2020-2022,Comedy
+Tiger King,2020-2021,Documentary; Crime
+The Mandalorian,2019-Present,Science Fiction; Fantasy; Adventure; Action
+The Boys,2019-Present,Science Fiction; Fantasy; Drama; Crime; Comedy; Action
+Chernobyl,2019,Mini-Series; Drama; Thriller; History
+Dead to Me,2019-2022,Drama; Comedy; Mystery
+I Think You Should Leave with Tim Robinson,2019-Present,Comedy
+The Twilight Zone (2019),2019-2020,Science Fiction; Horror; Fantasy; Drama; Suspense; Thriller; Mystery
+The Umbrella Academy,2019-2024,Science Fiction; Fantasy; Drama; Comedy; Adventure; Action; Suspense
+Dirty John,2018-2020,Drama; Crime; Thriller
+Narcos: Mexico,2018-2021,Drama; Crime; Adventure; Action
+Patriot Act with Hasan Minhaj,2018-2020,News; Comedy; Talk Show
+Maniac (2018),2018,Science Fiction; Mini-Series; Drama; Comedy
+You,2018-Present,Drama; Crime; Thriller; Romance
+Explained,2018-2021,Documentary
+Cobra Kai,2018-2025,Drama; Comedy; Action; Sport; Martial Arts
+Queer Eye,2018-Present,Reality
+Dark,2017-2020,Science Fiction; Crime; Thriller; Mystery
+MINDHUNTER,2017-2019,Drama; Crime; Thriller
+Manhunt (2017),2017-2020,Drama; Crime; Thriller
+Ozark,2017-2022,Crime; Drama
+13 Reasons Why,2017-2020,Drama; Suspense; Thriller; Mystery
+The Marvelous Mrs. Maisel,2017-2023,Drama; Comedy
+Santa Clarita Diet,2017-2019,Horror; Comedy
+The World's Most Extraordinary Homes,2017-2018,Reality; Home and Garden; Documentary
+Westworld,2016-2022,Science Fiction; Drama; Adventure; Western; Mystery
+The Good Place,2016-2020,Sci-Fi & Fantasy; Comedy
+Atlanta,2016-2022,Drama; Comedy
+Stranger Things,2016-Present,Science Fiction; Horror; Fantasy; Drama; Adventure; Suspense; Thriller; Mystery
+Show Me a Hero,2015,Mini-Series; Drama; Crime; History
+Mr. Robot,2015-2019,Drama; Crime; Thriller
+Better Call Saul,2015-2022,Drama; Crime
+The Man in the High Castle,2015-2019,Science Fiction; Drama; Thriller
+BoJack Horseman,2014-2020,Drama; Comedy; Animation
+The Leftovers,2014-2017,Fantasy; Drama; Mystery
+Last Week Tonight with John Oliver,2014-Present,News; Comedy; Talk Show
+Fargo,2014-Present,Drama; Crime; Thriller
+Rick and Morty,2013-Present,Science Fiction; Comedy; Animation; Adventure
+Brooklyn Nine-Nine,2013-2021,Comedy
+Peaky Blinders,2013-2022,Drama; Crime
+Nathan for You,2013-2017,Documentary; Comedy
+Utopia,2013-2014,Science Fiction; Drama; Thriller; Mystery
+Black Mirror,2011-Present,Science Fiction; Drama; Thriller
+Portlandia,2011-2018,Comedy
+Bob's Burgers,2011-Present,Comedy; Animation
+The Walking Dead,2010-2022,Horror; Drama; Adventure; Thriller
+Downton Abbey,2010-2015,Drama; Romance
+Community,2009-2015,Comedy
+Parks and Recreation,2009-2015,Comedy
+Party Down,2009-2023,Drama; Comedy
+Star Wars: The Clone Wars,2008-2020,Science Fiction; Fantasy; Drama; Animation; Adventure; Action
+Breaking Bad,2008-2013,Drama; Crime; Thriller; Western
+Mad Men,2007-2015,Drama
+30 Rock,2006-2013,Comedy
+Heroes,2006-2010,Science Fiction; Fantasy; Drama; Thriller
+The IT Crowd,2006-2010,Comedy
+It's Always Sunny in Philadelphia,2005-Present,Comedy
+The Office,2005-2013,Comedy
+Avatar: The Last Airbender,2005-2008,Fantasy; Family; Drama; Comedy; Children; Animation; Adventure; Action; Mystery; Martial Arts
+House,2004-2012,Drama; Suspense; Mystery
+Lost,2004-2010,Science Fiction; Fantasy; Drama; Adventure; Action; Thriller; Mystery
+Arrested Development,2003-2019,Comedy
+Firefly,2002-2003,Science Fiction; Drama; Adventure
+The Wire,2002-2008,Crime; Drama
+Futurama,1999-Present,Science Fiction; Comedy; Animation; Adventure
+Family Guy,1999-Present,Comedy; Animation
+The Sopranos,1999-2007,Family; Drama; Crime
+South Park,1997-Present,Comedy; Animation
+Friends,1994-2004,Comedy
+The X-Files,1993-2018,Science Fiction; Horror; Fantasy; Drama; Crime; Suspense; Thriller; Mystery
+Twin Peaks,1990-2017,Horror; Fantasy; Drama; Crime; Thriller; Romance; Mystery
+The Simpsons,1989-Present,Comedy; Animation
+Seinfeld,1989-1998,Comedy
+Saturday Night Live,1975-Present,Comedy
+The Prisoner,1967-1968,Science Fiction; Drama; Thriller; Mystery

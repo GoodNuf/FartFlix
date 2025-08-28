@@ -4,6 +4,7 @@ import PlansIcon from './icons/IconPlans.vue'
 import CatalogIcon from './icons/IconCatalog.vue'
 import GetStartedIcon from './icons/IconGetStarted.vue'
 import MemberIcon from './icons/IconMember.vue'
+import Switcher from './Switcher.vue'
 import Popup from './Popup.vue'
 import Login from './Login.vue'
 import Catalog from './Catalog.vue'
@@ -14,6 +15,8 @@ import Dialog from 'primevue/dialog';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Papa from 'papaparse';
+import SelectButton from 'primevue/selectbutton';
+import Clients from './Clients.vue'
 const Statu = ref(null);
 const openStatus = () => {
   Statu.value.openModal();
@@ -37,6 +40,11 @@ const openSignUp = (txt) => {
 const Pop = ref(null);
 const openPopup = () => {
   Pop.value.openModal();
+  closeModal();
+};
+const Client = ref(null);
+const openClient = () => {
+  Client.value.openModal();
   closeModal();
 };
 const dialogVisibleMovies = ref(false);
@@ -86,8 +94,8 @@ const openShows = async () => {
       <PlansIcon />
     </template>
     <template #heading>Plans</template>
-    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Monthly</h4>(Access to 900+ movies & 6,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">6</span>/month<sup>1</sup></br>
-    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Annual</h4>(Access to 900+ movies & 6,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">55</span>/year<sup>1</sup>
+    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Monthly</h4>(Access to 1,100+ movies & 9,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">6</span>/month<sup>1</sup></br>
+    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Annual</h4>(Access to 1,100+ movies & 9,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">55</span>/year<sup>1</sup>
   </WelcomeItem>
   <WelcomeItem>
     <template #icon>
@@ -112,8 +120,8 @@ const openShows = async () => {
     <template #heading>Already a FartFlix+ Member?</template>
     <a href="https://watch.fartflix.com" target="_blank" rel="noopener">Start streaming</a><span> | </span>
     <a href="https://request.fartflix.com" target="_blank" rel="noopener">Make a request</a><span> | </span>
+    <a href="#" @click.prevent="openClient" style="color: #69CCC9;">Clients</a><span> | </span>
     <a href="#" @click.prevent="openStatus" style="color: #69CCC9;">Server status</a>
-    <!-- <span> | </span><a href="#" @click.prevent="openLog" style="color: #818181;">Manage account</a> -->
   </WelcomeItem>
   <Terms>
     <template #txt>
@@ -125,6 +133,7 @@ const openShows = async () => {
   <Catalog ref="Cat"/>
   <SignUp ref="Sign"/>
   <Terms ref="Pop"/>
+  <Clients ref="Client"/>
   <Dialog v-model:visible="dialogVisibleMovies" :header="'Movies ('+tableData.length+')'" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
     <DataTable :value="tableData" scrollable scrollHeight="flex" tableStyle="min-width: 50rem" removableSort class="custom-table">
       <Column v-for="col in columns" :key="col.field" :field="col.field" :header="col.header" sortable />
