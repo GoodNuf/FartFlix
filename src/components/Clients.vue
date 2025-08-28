@@ -53,7 +53,7 @@ const Pop = ref(null);
       </template>
       <template #body>
           <div class="label-container">
-            <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+            <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" />
             <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;">Android</label>
             <RadioButton v-model="plan" inputId="ios" name="plan" value="ios" style="display: none;" @change="cost=6"/>
             <label for="ios" :class="{active:plan==='ios'}">iOS</label>
@@ -67,47 +67,47 @@ const Pop = ref(null);
               <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;"@click="openClientLink('https://play.google.com/store/apps/details?id=dev.jdtech.jellyfin&pcampaignid=web_share')">Findroid</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;"@click="openClientLink('https://play.google.com/store/apps/details?id=nl.jknaapen.fladder&pcampaignid=web_share')">Fladder</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;"@click="openClientLink('https://play.google.com/store/apps/details?id=com.fredrikburmester.streamyfin&pcampaignid=web_share')">Streamyfin</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;"@click="openClientLink('https://play.google.com/store/apps/details?id=org.jellyfin.mobile&pcampaignid=web_share')">Jellyfin</label>
             </div>
           </div>
           <div id="iosClients" v-if="plan==='ios'">
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="Swiftfin" name="plan" value="Swiftfin" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="Swiftfin" name="plan" value="Swiftfin" style="display: none;"/>
               <label for="android" :class="{active:plan==='ios'}" style="margin-right: 8px;"@click="openClientLink('https://apps.apple.com/ca/app/swiftfin/id1604098728')">Swiftfin</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="Streamyfin" name="plan" value="Streamyfin" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="Streamyfin" name="plan" value="Streamyfin" style="display: none;"/>
               <label for="android" :class="{active:plan==='ios'}" style="margin-right: 8px;"@click="openClientLink('https://apps.apple.com/us/app/streamyfin/id6593660679')">Streamyfin</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='ios'}" style="margin-right: 8px;"@click="openClientLink('https://apps.apple.com/us/app/infuse/id1136220934?mt=8')">Infuse</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='ios'}" style="margin-right: 8px;"@click="openClientLink('https://apps.apple.com/us/app/jellyfin-mobile/id1480192618?mt=8')">Jellyfin Mobile</label>
             </div>
           </div>
           <div id="desktopClients" v-if="plan==='desktop'">
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='desktop'}" style="margin-right: 8px;"@click="openClientLink('https://github.com/DonutWare/Fladder/releases/latest')">Fladder</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='desktop'}" style="margin-right: 8px;"@click="openClientLink('https://github.com/jellyfin/jellyfin-media-player/releases/latest')">Jellyfin Media Player</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;" @change="cost=0"/>
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='desktop'}" style="margin-right: 8px;"@click="openClientLink('https://watch.fartflix.com')">Jellyfin Web</label>
             </div>
           </div>
