@@ -1,35 +1,15 @@
 <script setup>
 import modal from './ModalChild.vue'
-import InputText from 'primevue/inputtext';
-import Button from 'primevue/button';
 import RadioButton from 'primevue/radiobutton';
-import Password from 'primevue/password';
-import { Form } from '@primevue/forms';
-import FloatLabel from 'primevue/floatlabel';
-import Checkbox from 'primevue/checkbox';
 import Terms from './TermsPopup.vue'
-import CheckboxGroup from 'primevue/checkboxgroup';
 import { ref } from 'vue'
 import { defineExpose } from 'vue';
-import emailjs from 'emailjs-com' 
 const showModal = ref(false)
 const txt = ref('Loading...');
-const backgroundColour = ref('#69ccc971');
-const colour = ref('white');
 const plan = ref('android');
 const openModal = () => {
   showModal.value = true;
   txt.value='Sign Up';
-};
-const closeModal = () => {
-  showModal.value = false;
-};
-const initialValues = {
-  fname: '',
-  email: '',
-  password: '',
-  cpassword: '',
-  plan: 'android',
 };
 defineExpose({
   openModal,
@@ -37,11 +17,6 @@ defineExpose({
 const openClientLink = (url) => {
   window.open(url, '_blank');
 };
-const fname = ref('');
-const email = ref('');
-const password = ref('');
-const cpassword = ref('');
-const loading = ref(false);
 import Popup from './Popup.vue'
 const Pop = ref(null);
 </script>
