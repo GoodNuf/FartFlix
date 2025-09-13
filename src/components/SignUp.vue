@@ -42,11 +42,8 @@ const loading = ref(false);
 import Popup from './Popup.vue'
 const Pop = ref(null);
 const openPopup = (txt,txt2) => {
-
   Pop.value.openModal(txt,txt2);
-
   closeModal();
-
 };
 const PopT = ref(null);
 const openTerms = (txt,txt2) => {
@@ -72,9 +69,16 @@ const onFormSubmit = async () => {
   if (isUserCreated) {
     if(plan.value==='Trial')
     emailjs.sendForm('apple','trial',form,'rQQm5NSHaWQQ46E1J')
-    else
+    else if(plan.value==='Monthly') {
     emailjs.sendForm('apple','pay',form,'rQQm5NSHaWQQ46E1J')
-    openPopup('Success!','Your account has been created successfully! Please check your email for further instructions. ');
+    window.open('https://pay.fartflix.com/apps/2chxmm4LbQ566mnVXtkueDcdMRr7/pos', '_blank');
+    openPopup('Success!','Your account has been successfully created. Please complete your payment on the other tab or via the link sent to your email to activate your account.');
+    }
+    else if(plan.value==='Annual') {
+    emailjs.sendForm('apple','pay',form,'rQQm5NSHaWQQ46E1J')
+    window.open('https://pay.fartflix.com/apps/2xMTknqzMtdcJFDPXrLR3gdLmt9q/pos', '_blank');
+    openPopup('Success!','Your account has been successfully created. Please complete your payment on the other tab or via the link sent to your email to activate your account.');
+    }
   } else {
     openPopup('Error','Account creation failed. Please use another email address or try again later.');
   }
@@ -196,7 +200,8 @@ const newUser = async () => {
           <FloatLabel style="display: none;">
             <InputText v-model.number="cost" name="cost" style="width:100%;"/>
           </FloatLabel>
-          <Button type="submit" severity="secondary" label="Submit" />
+          <!-- <iframe src='https://pay.fartflix.com/apps/3W21e1MBpzoSHPc9U6vNW4PxMHxx/pos' style='max-width: 100%; border: 0;'></iframe> -->
+          <Button type="submit" severity="secondary" label="Continue to payment -->" />
         </Form>
       </template>
       <template #footer>
