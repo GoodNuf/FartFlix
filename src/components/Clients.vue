@@ -56,12 +56,12 @@ const Pop = ref(null);
           </div>
           <div id="iosClients" v-if="plan==='ios'">
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="Swiftfin" name="plan" value="Swiftfin" style="display: none;"/>
-              <label for="android" :class="{active:plan==='ios'}" style="margin-right: 8px;"@click="openClientLink('https://apps.apple.com/ca/app/swiftfin/id1604098728')">Swiftfin</label>
-            </div><br>
-            <div class="label-container">
               <RadioButton v-model="plan" inputId="Streamyfin" name="plan" value="Streamyfin" style="display: none;"/>
               <label for="android" :class="{active:plan==='ios'}" style="margin-right: 8px;"@click="openClientLink('https://apps.apple.com/us/app/streamyfin/id6593660679')">Streamyfin</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="Swiftfin" name="plan" value="Swiftfin" style="display: none;"/>
+              <label for="android" :class="{active:plan==='ios'}" style="margin-right: 8px;"@click="openClientLink('https://apps.apple.com/ca/app/swiftfin/id1604098728')">Swiftfin</label>
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
