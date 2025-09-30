@@ -71,12 +71,12 @@ const onFormSubmit = async () => {
     emailjs.sendForm('apple','trial',form,'rQQm5NSHaWQQ46E1J')
     else if(plan.value==='Monthly') {
     emailjs.sendForm('apple','pay',form,'rQQm5NSHaWQQ46E1J')
-    window.open('https://pay.fartflix.com/apps/2chxmm4LbQ566mnVXtkueDcdMRr7/pos', '_blank');
+    window.open('https://pay.fartflix.com/apps/2tQohmmPV14dqLgcHUoX3cExr2F8/pos', '_blank');
     openPopup('Success!','Your account has been successfully created. Please complete your payment on the other tab or via the link sent to your email to activate your account.');
     }
     else if(plan.value==='Annual') {
     emailjs.sendForm('apple','pay',form,'rQQm5NSHaWQQ46E1J')
-    window.open('https://pay.fartflix.com/apps/2xMTknqzMtdcJFDPXrLR3gdLmt9q/pos', '_blank');
+    window.open('https://pay.fartflix.com/apps/27PCbmuK7eozDZwy1fdhoqc1DAEY/pos', '_blank');
     openPopup('Success!','Your account has been successfully created. Please complete your payment on the other tab or via the link sent to your email to activate your account.');
     }
   } else {
