@@ -29,7 +29,7 @@ const fetchServerStatus = async () => {
 };
 const openModal = () => {
   showModal.value = true;
-  fetchServerStatus();
+  // fetchServerStatus();
 };
 defineExpose({
   openModal,

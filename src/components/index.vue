@@ -6,7 +6,6 @@ import GetStartedIcon from './icons/IconGetStarted.vue'
 import MemberIcon from './icons/IconMember.vue'
 import Switcher from './Switcher.vue'
 import Popup from './Popup.vue'
-import Login from './Login.vue'
 import Catalog from './Catalog.vue'
 import Terms from './TermsPopup.vue'
 import Status from './ServerStatus.vue'
@@ -51,6 +50,12 @@ import Services from './Services.vue'
 const Service = ref(null);
 const openServices = (txt) => {
   Service.value.openModal();
+  closeModal();
+};
+import Logins from './Login.vue'
+const Login = ref(null);
+const openLogins = (txt) => {
+  Login.value.openModal();
   closeModal();
 };
 const dialogVisibleMovies = ref(false);
@@ -127,7 +132,7 @@ const openShows = async () => {
     <a href="https://watch.fartflix.com" target="_blank" rel="noopener">Start streaming</a><span> | </span>
     <a href="https://request.fartflix.com" target="_blank" rel="noopener">Requests</a><span> | </span>
     <a href="#" @click.prevent="openClient" style="color: #69CCC9;">Clients</a><span> | </span>
-    <a href="#" @click.prevent="openServices" style="color: #69CCC9;">Included services</a><span> | </span>
+    <a href="#" @click.prevent="openLogins" style="color: #69CCC9;">Included services</a><span> | </span>
     <a href="https://status.fartflix.com" target="_blank" rel="noopener">Server status</a>
   </WelcomeItem>
   <Terms>
@@ -142,6 +147,7 @@ const openShows = async () => {
   <Terms ref="Pop"/>
   <Clients ref="Client"/>
   <Services ref="Service"/>
+  <Logins ref="Login"/>
   <Dialog v-model:visible="dialogVisibleMovies" :header="'Movies ('+tableData.length+')'" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
     <DataTable :value="tableData" scrollable scrollHeight="flex" tableStyle="min-width: 50rem" removableSort class="custom-table">
       <Column v-for="col in columns" :key="col.field" :field="col.field" :header="col.header" sortable />
