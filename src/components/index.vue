@@ -47,6 +47,12 @@ const openClient = () => {
   Client.value.openModal();
   closeModal();
 };
+import Services from './Services.vue'
+const Service = ref(null);
+const openServices = (txt) => {
+  Service.value.openModal();
+  closeModal();
+};
 const dialogVisibleMovies = ref(false);
 const dialogVisibleShows = ref(false);
 const tableData = ref([]);
@@ -119,8 +125,9 @@ const openShows = async () => {
     </template>
     <template #heading>Already a FartFlix+ Member?</template>
     <a href="https://watch.fartflix.com" target="_blank" rel="noopener">Start streaming</a><span> | </span>
-    <a href="https://request.fartflix.com" target="_blank" rel="noopener">Make a request</a><span> | </span>
+    <a href="https://request.fartflix.com" target="_blank" rel="noopener">Requests</a><span> | </span>
     <a href="#" @click.prevent="openClient" style="color: #69CCC9;">Clients</a><span> | </span>
+    <a href="#" @click.prevent="openServices" style="color: #69CCC9;">Included services</a><span> | </span>
     <a href="https://status.fartflix.com" target="_blank" rel="noopener">Server status</a>
   </WelcomeItem>
   <Terms>
@@ -134,6 +141,7 @@ const openShows = async () => {
   <SignUp ref="Sign"/>
   <Terms ref="Pop"/>
   <Clients ref="Client"/>
+  <Services ref="Service"/>
   <Dialog v-model:visible="dialogVisibleMovies" :header="'Movies ('+tableData.length+')'" :style="{ width: '75vw'}" maximizable modal :contentStyle="{ height: '70vh' }" class="custom-dialog">
     <DataTable :value="tableData" scrollable scrollHeight="flex" tableStyle="min-width: 50rem" removableSort class="custom-table">
       <Column v-for="col in columns" :key="col.field" :field="col.field" :header="col.header" sortable />
