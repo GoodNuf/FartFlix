@@ -34,6 +34,10 @@ const Pop = ref(null);
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
+              <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;"@click="openClientLink('https://pdf.fartflix.com/')">PDF Editing</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;"@click="openClientLink('https://it-tools.fartflix.com/')">IT-Tools</label>
             </div><br>
             <div class="label-container">
