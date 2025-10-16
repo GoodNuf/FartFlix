@@ -2,8 +2,10 @@ Name,Year,Genres
 The Woman in Cabin 10,2025,Mystery; Drama; Thriller
 Maintenance Required,2025,Romance; Comedy
 Shell,2025,Drama; Horror; Thriller
+Killing Faith,2025,Thriller; Western
 Play Dirty,2025,Crime
 The Astronaut,2025,Horror; Science Fiction; Thriller
+The Strangers: Chapter 2,2025,Horror; Thriller
 Vicious,2025,Horror; Thriller
 V/H/S/HALLOWEEN,2025,Horror; Thriller
 Steve,2025,Drama; Comedy
@@ -12,6 +14,9 @@ The Lost Bus,2025,Drama; Thriller
 Adulthood,2025,Comedy; Crime; Drama; Mystery
 London Calling,2025,Action; Crime; Comedy; Thriller
 HIM,2025,Horror; Mystery
+Beast of War,2025,Action; Horror; Thriller; War
+A Big Bold Beautiful Journey,2025,Romance; Fantasy; Drama
+Gabby's Dollhouse: The Movie,2025,Family; Comedy; Adventure; Animation
 The Man in My Basement,2025,Horror; Mystery; Thriller
 Code 3,2025,Action; Comedy
 Bodyguard of Lies,2025,Documentary
@@ -20,6 +25,7 @@ Swiped,2025,History; Drama
 Twinless,2025,Comedy; Drama
 The Threesome,2025,Comedy; Romance; Drama
 Stolen Girl,2025,Thriller; Action; Adventure
+John Candy: I Like Me,2025,Documentary
 The Cut,2025,Thriller; Drama
 The Conjuring: Last Rites,2025,Horror
 The Toxic Avenger Unrated,2025,Action; Comedy; Science Fiction
@@ -84,6 +90,7 @@ Sharp Corner,2025,Thriller; Comedy
 Juliet & Romeo,2025,Romance; Drama
 Friendship,2025,Comedy
 Wick Is Pain,2025,Documentary
+Ocean with David Attenborough,2025,Documentary
 Karate Kid: Legends,2025,Action; Adventure; Drama
 Clown in a Cornfield,2025,Horror; Mystery; Thriller
 Shadow Force,2025,Action; Drama; Thriller
@@ -91,6 +98,7 @@ Rust,2025,Western
 Rosario,2025,Horror
 Nonnas,2025,Comedy
 Thunderbolts*,2025,Action; Science Fiction; Adventure
+The Things You Kill,2025,Thriller; Drama
 Havoc,2025,Action; Crime; Thriller
 On Swift Horses,2025,Romance; Drama
 Until Dawn,2025,Horror; Mystery
@@ -190,6 +198,7 @@ Woman of the Hour,2024,Crime; Drama; Thriller
 Joker: Folie à Deux,2024,Drama; Crime; Thriller
 Saturday Night,2024,Comedy; Drama
 The Outrun,2024,Drama
+Solvent,2024,Horror; Drama; Mystery
 Megalopolis,2024,Science Fiction; Drama
 Apartment 7A,2024,Horror; Thriller
 I'm Still Here,2024,Drama; History
@@ -225,6 +234,7 @@ Young Woman and the Sea,2024,History; Drama
 Kinds of Kindness,2024,Drama; Comedy
 Furiosa: A Mad Max Saga,2024,Action; Science Fiction; Adventure
 Hit Man,2024,Comedy; Romance; Crime
+The Strangers: Chapter 1,2024,Horror; Thriller
 I Saw the TV Glow,2024,Drama; Horror
 The Fall Guy,2024,Action; Comedy; Romance
 Rebel Moon - Part Two: The Scargiver,2024,Science Fiction; Action; Adventure
@@ -328,6 +338,7 @@ Nope,2022,Horror; Science Fiction; Thriller
 The Gray Man,2022,Action; Thriller
 Thor: Love and Thunder,2022,Fantasy; Action; Comedy
 Minions: The Rise of Gru,2022,Family; Comedy; Adventure; Animation
+The Black Phone,2022,Horror; Thriller
 Lightyear,2022,Animation; Science Fiction; Family; Adventure
 Hustle,2022,Drama; Comedy
 Jurassic World Dominion,2022,Adventure; Action; Science Fiction
@@ -336,6 +347,7 @@ Top Gun: Maverick,2022,Action; Drama
 Men,2022,Horror; Thriller; Fantasy
 Doctor Strange in the Multiverse of Madness,2022,Fantasy; Action; Adventure
 Downton Abbey: A New Era,2022,Drama; Romance
+Dinosaurs: The Final Day with David Attenborough,2022,Documentary; History
 Fantastic Beasts: The Secrets of Dumbledore,2022,Fantasy; Adventure
 Sonic the Hedgehog 2,2022,Action; Adventure; Family; Comedy
 Morbius,2022,Action; Science Fiction; Fantasy
@@ -389,6 +401,7 @@ Zack Snyder's Justice League,2021,Action; Adventure; Fantasy
 Nobody,2021,Action; Thriller
 Raya and the Last Dragon,2021,Animation; Family; Fantasy; Action; Adventure
 Judas and the Black Messiah,2021,Drama; History
+Nomadland,2021,Drama
 Soul,2020,Animation; Family; Comedy; Fantasy; Drama
 The Father,2020,Drama
 Wonder Woman 1984,2020,Action; Adventure; Fantasy
@@ -454,6 +467,7 @@ John Wick: Chapter 3 - Parabellum,2019,Action; Thriller; Crime
 The Dead Don't Die,2019,Comedy; Horror; Fantasy; Science Fiction
 Pokémon Detective Pikachu,2019,Action; Adventure; Fantasy
 Avengers: Endgame,2019,Adventure; Science Fiction; Action
+Our Planet: Behind the Scenes,2019,Documentary
 Missing Link,2019,Family; Animation; Comedy; Adventure
 Shazam!,2019,Action; Comedy; Fantasy
 Dumbo,2019,Family; Fantasy; Adventure
@@ -988,6 +1002,7 @@ Terminator 3: Rise of the Machines,2003,Action; Thriller; Science Fiction
 "Legally Blonde 2: Red, White & Blonde",2003,Comedy; Romance
 2 Fast 2 Furious,2003,Action; Crime; Thriller
 Finding Nemo,2003,Animation; Family
+Deep Blue,2003,Documentary
 The Matrix Reloaded,2003,Adventure; Action; Thriller; Science Fiction
 X2,2003,Adventure; Action; Science Fiction
 Memories of Murder,2003,Crime; Drama; Thriller
