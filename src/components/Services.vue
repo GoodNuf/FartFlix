@@ -47,6 +47,10 @@ const Pop = ref(null);
             <div class="label-container">
               <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
               <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;"@click="openClientLink('https://encrypt.fartflix.com/')">File Encryption</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
+              <label for="android" :class="{active:plan==='android'}" style="margin-right: 8px;"@click="openClientLink('https://matchering.fartflix.com/')">Audio Mastering</label>
             </div>
           </div>
       </template>
