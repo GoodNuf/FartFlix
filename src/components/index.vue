@@ -105,8 +105,8 @@ const openShows = async () => {
       <PlansIcon />
     </template>
     <template #heading>Plans</template>
-    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Monthly</h4>(Access to 1,400+ movies & 14,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">6</span>/month<sup>1</sup></br>
-    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Annual</h4>(Access to 1,400+ movies & 14,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">55</span>/year<sup>1</sup>
+    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Monthly</h4>(Access to 1,500+ movies & 14,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">6</span>/month<sup>1</sup></br>
+    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Annual</h4>(Access to 1,500+ movies & 14,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">55</span>/year<sup>1</sup>
   </WelcomeItem>
   <WelcomeItem>
     <template #icon>
