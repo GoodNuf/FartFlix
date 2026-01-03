@@ -45,12 +45,20 @@ const openServices = (txt) => {
   Service.value.openModal();
   closeModal();
 };
+const openServicesAdmin = (txt) => {
+  Service.value.openModalAdmin();
+  closeModal();
+};
 const onFormSubmit = async () => {
   const user = await login();
   // console.log(user);
   // console.log(user.User.Policy.EnableMediaPlayback);
   if (!user||!user.User||!user.User.Policy)
   openPopup('Error','Invalid username or password. Please try again.');
+  else if (user.User.Name==="Admin"){
+    openServicesAdmin();
+    console.log("Admin logged in");
+  }
   else if (user.User.Policy.EnableMediaPlayback===true)
     openServices();
   else if (user.User.Policy.EnableMediaPlayback===false)

@@ -9,7 +9,7 @@ import FloatLabel from 'primevue/floatlabel';
 import Checkbox from 'primevue/checkbox';
 import Terms from './TermsPopup.vue'
 import CheckboxGroup from 'primevue/checkboxgroup';
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { defineExpose } from 'vue';
 import emailjs from 'emailjs-com' 
 const showModal = ref(false)
@@ -17,6 +17,7 @@ const txt = ref('Loading...');
 const backgroundColour = ref('#69ccc971');
 const colour = ref('white');
 const plan = ref('Monthly');
+const toggle = ref(false);
 const openModal = () => {
   showModal.value = true;
   txt.value='Sign Up';
@@ -150,6 +151,27 @@ const newUser = async () => {
     return false;
   }
 };
+onMounted(async () => {
+  // 1) try to read public/config.json
+  try {
+    const r = await fetch('/config.json', { cache: 'no-cache' });
+    if (r.ok) {
+      const data = await r.json();
+      if (typeof data.signups === 'boolean') {
+        toggle.value = data.signups;
+        return;
+      }
+    }
+  } catch (e) {
+    console.warn('Could not load /config.json', e);
+  }
+  // 2) fallback to localStorage
+  const local = localStorage.getItem('signups');
+  if (local !== null) {
+    toggle.value = JSON.parse(local);
+  }
+  console.log('Toggle: '+toggle.value);
+});
 </script>
 <template style="overflow-y: hidden;">
   <Teleport to="body">
@@ -157,7 +179,7 @@ const newUser = async () => {
       <template #header>
         <h3 style="color: white;">Sign Up Form</h3>
       </template>
-      <template #body>
+      <template #body v-if="toggle">
         <div id="spinner" style="display:none;">
           <div class="spring-spinner" style="margin: 0 auto;">
             <div class="spring-spinner-part top">
@@ -203,6 +225,9 @@ const newUser = async () => {
           <!-- <iframe src='https://pay.fartflix.com/apps/3W21e1MBpzoSHPc9U6vNW4PxMHxx/pos' style='max-width: 100%; border: 0;'></iframe> -->
           <Button type="submit" severity="secondary" label="Continue to payment -->" />
         </Form>
+      </template>
+      <template #body v-if="!toggle">
+        <p>Signups are currently closed. Sorry for the inconvenience.</p>
       </template>
       <template #footer>
         <button @click="showModal = false">Close</button>
