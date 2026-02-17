@@ -1,4 +1,6 @@
 Name,Year,Genres
+His & Hers,2026,Drama; Crime; Thriller
+The Copenhagen Test,2025-Present,Science-Fiction; Thriller; Espionage
 The End of an Era,2025,Documentary
 Sean Combs: The Reckoning,2025,Documentary; Crime
 Pluribus,2025-Present,Drama; Science-Fiction
@@ -7,6 +9,7 @@ Splinter Cell: Deathwatch,2025-Present,Action & Adventure; Animation
 Chad Powers,2025-Present,Comedy; Sports
 Wayward,2025,Drama; Mini-Series; Mystery; Thriller
 Black Rabbit,2025,Drama; Mini-Series
+Task,2025-Present,Drama; Crime
 The Paper (2025),2025-Present,Comedy
 Long Story Short,2025-Present,Animation; Comedy
 Butterfly (2025),2025-Present,Action; Mini-Series; Thriller
@@ -16,6 +19,7 @@ Ironheart,2025,Action; Adventure; Drama; Fantasy; Science Fiction
 Pee-wee as Himself,2025,Documentary
 Adolescence,2025,Crime; Drama; Mini-Series; Thriller
 SNL50: Beyond Saturday Night,2025,Documentary; Mini-Series
+The Pitt,2025-Present,Drama; Medical
 The Sticky,2024,Comedy; Crime; Drama
 Star Wars: Skeleton Crew,2024-Present,Adventure; Science Fiction
 Hysteria! (2024),2024,Drama; Thriller
@@ -55,6 +59,7 @@ The Dropout,2022,Drama; Mini-Series
 FROM,2022-Present,Drama; Horror; Mystery; Science Fiction; Thriller
 Severance,2022-Present,Drama; Mystery; Science Fiction; Thriller
 jeen-yuhs: A Kanye Trilogy,2022,Documentary
+This is Going to Hurt,2022,Drama; Comedy; Medical
 The Woman in the House Across the Street from the Girl in the Window,2022,Comedy; Crime; Drama; Mystery
 Peacemaker,2022-Present,Action; Comedy; Science Fiction
 The Green Planet,2022,Documentary; Mini-Series
@@ -77,6 +82,7 @@ Space Force,2020-2022,Comedy
 Jeffrey Epstein: Filthy Rich,2020,Crime; Documentary
 The Last Dance,2020,Drama; Sports
 Tiger King,2020-2021,Crime; Documentary
+Devs,2020,Drama; Science-Fiction; Mystery
 The Witcher,2019-Present,Drama; Action; Fantasy
 The Mandalorian,2019-Present,Action; Adventure; Fantasy; Science Fiction
 "Seven Worlds, One Planet",2019,Documentary
@@ -117,6 +123,7 @@ Marvel's Luke Cage,2016-2018,Action; Crime; Drama; Science Fiction; Thriller
 The Good Place,2016-2020,Comedy; Drama; Fantasy; Romance
 Atlanta,2016-2022,Comedy; Drama
 Stranger Things,2016-Present,Drama; Horror; Science-Fiction
+The Night Of,2016,Drama; Crime; Legal
 Great Barrier Reef with David Attenborough,2015-2016,Documentary; Mini-Series
 The Expanse,2015-2022,Science-Fiction; Thriller; Mystery
 The Hunt,2015,Nature
@@ -126,6 +133,7 @@ Mr. Robot,2015-2019,Crime; Drama; Thriller
 Better Call Saul,2015-2022,Crime; Drama
 The Man in the High Castle,2015-2019,Drama; Science Fiction; Thriller
 BoJack Horseman,2014-2020,Animation; Comedy; Drama
+The Knick,2014-2015,Drama; Medical
 The Leftovers,2014-2017,Drama; Fantasy; Mystery
 Last Week Tonight with John Oliver,2014-Present,Comedy; News; Talk Show
 Fargo,2014-Present,Crime; Drama; Thriller
@@ -147,6 +155,7 @@ Portlandia,2011-2018,Comedy
 Bob's Burgers,2011-Present,Animation; Comedy
 The Walking Dead,2010-2022,Adventure; Drama; Horror; Thriller
 Downton Abbey,2010-2015,Drama; Romance
+Justified,2010-2015,Drama; Crime; Western
 Life,2009,Documentary
 Modern Family,2009-2020,Comedy
 Community,2009-2015,Comedy
@@ -155,6 +164,7 @@ Glee,2009-2015,Comedy; Drama; Musical
 Parks and Recreation,2009-2015,Comedy
 Party Down,2009-2023,Comedy; Drama
 Star Wars: The Clone Wars,2008-2020,Action; Adventure; Animation; Drama; Fantasy; Science Fiction
+Fringe,2008-2013,Drama; Action; Science-Fiction
 Breaking Bad,2008-2013,Crime; Drama; Thriller; Western
 The Big Bang Theory,2007-2019,Comedy; Romance
 Mad Men,2007-2015,Drama
@@ -169,12 +179,14 @@ The Office (US),2005-2013,Comedy
 Avatar: The Last Airbender,2005-2008,Action; Adventure; Animation; Children; Comedy; Drama; Family; Fantasy; Martial Arts; Mystery
 House,2004-2012,Drama; Mystery; Suspense
 Lost,2004-2010,Drama; Adventure; Supernatural
+Deadwood,2004-2006,Drama; Crime; Western
 Arrested Development,2003-2019,Comedy
 Top Gear,2002-2022,Comedy; Documentary; Talk Show; Travel
 Firefly,2002-2003,Adventure; Drama; Science Fiction
 The Wire,2002-2008,Crime; Drama; Thriller
 24,2001-2014,Action; Crime; Drama; Thriller
 The Blue Planet,2001,Documentary
+Band of Brothers,2001,Drama; Action; War
 Malcolm in the Middle,2000-2006,Comedy; Family
 The West Wing,1999-2006,Drama
 Futurama,1999-Present,Adventure; Animation; Comedy; Science Fiction
