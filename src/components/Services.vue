@@ -30,7 +30,7 @@ const openClient = () => {
   <Teleport to="body">
     <modal :show="showModal" @close="showModal = false">
       <template #header>
-        <h3 style="color: white;">Fart Zone</h3>
+        <h3 style="color: white;">The FartZone™</h3>
       </template>
       <template #body>
           <div class="label-container">
@@ -49,11 +49,11 @@ const openClient = () => {
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
-              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClientLink('https://request.fartflix.com')">Requests</label>
+              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClientLink('https://request.fartflix.com')">Make a request</label>
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
-              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClient">Clients</label>
+              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClient">Recommended clients</label>
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
