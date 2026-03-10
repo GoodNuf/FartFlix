@@ -46,7 +46,7 @@ const openClient = () => {
   Client.value.openModal();
   closeModal();
 };
-import Services from './Services.vue'
+import Services from './Servicesb.vue'
 const Service = ref(null);
 const openServices = (txt) => {
   Service.value.openModal();
@@ -105,8 +105,8 @@ const openShows = async () => {
       <PlansIcon />
     </template>
     <template #heading>Plans</template>
-    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Monthly</h4>(Access to 1,500+ movies & 14,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">6</span>/month<sup>1</sup></br>
-    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Annual</h4>(Access to 1,500+ movies & 14,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">55</span>/year<sup>1</sup>
+    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Monthly</h4>(Access to 1,600+ movies & 15,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">6</span>/month<sup>1</sup></br>
+    <h4 style="color:white;">FartFlix<span style="color:#69CCC9;">+</span> Annual</h4>(Access to 1,600+ movies & 15,000+ episodes of TV + 1 free monthly request): <br>$<span style="color:#69CCC9;">55</span>/year<sup>1</sup>
   </WelcomeItem>
   <WelcomeItem>
     <template #icon>
@@ -129,11 +129,12 @@ const openShows = async () => {
       <MemberIcon />
     </template>
     <template #heading>Already a FartFlix+ Member?</template>
-    <a href="https://watch.fartflix.com" target="_blank" rel="noopener">Start streaming</a><span> | </span>
+    <a href="#" @click.prevent="openLogins" style="color: #69CCC9;">Login</a>
+    <!-- <a href="https://watch.fartflix.com" target="_blank" rel="noopener">Start streaming</a><span> | </span>
     <a href="https://request.fartflix.com" target="_blank" rel="noopener">Requests</a><span> | </span>
     <a href="#" @click.prevent="openClient" style="color: #69CCC9;">Clients</a><span> | </span>
     <a href="#" @click.prevent="openLogins" style="color: #69CCC9;">Included services</a><span> | </span>
-    <a href="https://status.fartflix.com" target="_blank" rel="noopener">Server status</a>
+    <a href="https://status.fartflix.com" target="_blank" rel="noopener">Server status</a> -->
   </WelcomeItem>
   <Terms>
     <template #txt>

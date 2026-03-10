@@ -1,116 +1,111 @@
 <script setup>
 import modal from './ModalChild.vue'
 import RadioButton from 'primevue/radiobutton';
-import ToggleButton from 'primevue/togglebutton';
 import Terms from './TermsPopup.vue'
-import { ref, watch, onMounted } from 'vue'
+import { ref } from 'vue'
 import { defineExpose } from 'vue';
 const showModal = ref(false)
-const admin = ref(false)
-const toggle = ref(false)
 const txt = ref('Loading...');
-const plan = ref('android');
+const plan = ref('account');
 const openModal = () => {
   showModal.value = true;
   txt.value='Sign Up';
 };
-const openModalAdmin = () => {
-  showModal.value = true;
-  txt.value='Sign Up';
-  admin.value = true;
-};
 defineExpose({
   openModal,
-  openModalAdmin
 });
 const openClientLink = (url) => {
   window.open(url, '_blank');
 };
-// persist config to server (if available). Falls back to localStorage.
-async function persistConfig(val) {
-  // always save locally for immediate persistence per-browser
-  localStorage.setItem('signups', JSON.stringify(val));
-  try {
-    // your server should expose an endpoint to write config.json
-    const res = await fetch('public/config.json', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ signups: !!val })
-    });
-    if (!res.ok) throw new Error('persist failed');
-  } catch (e) {
-    console.warn('Could not persist to server; saved locally only.', e);
-  }
-}
-watch(toggle, (val) => {
-  console.log('Signups toggled:', val);
-  persistConfig(val);
-});
-onMounted(async () => {
-  // 1) try to read public/config.json
-  try {
-    const r = await fetch('/config.json', { cache: 'no-cache' });
-    if (r.ok) {
-      const data = await r.json();
-      if (typeof data.signups === 'boolean') {
-        toggle.value = data.signups;
-        return;
-      }
-    }
-  } catch (e) {
-    console.warn('Could not load /config.json', e);
-  }
-  // 2) fallback to localStorage
-  const local = localStorage.getItem('signups');
-  if (local !== null) {
-    toggle.value = JSON.parse(local);
-  }
-});
-
 import Popup from './Popup.vue'
 const Pop = ref(null);
+const Client = ref(null);
+import Clients from './Clients.vue'
+const openClient = () => {
+  Client.value.openModal();
+  closeModal();
+};
 </script>
 <template style="overflow-y: hidden;">
   <Teleport to="body">
     <modal :show="showModal" @close="showModal = false">
       <template #header>
-        <h3 style="color: white;">Included Services</h3>
+        <h3 style="color: white;">Fart Zone</h3>
       </template>
       <template #body>
-          <div id="androidClients" v-if="plan==='android'">
+          <div class="label-container">
+            <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;" />
+            <label for="account" :class="{active:plan==='account'}" style="margin-right: 8px;">FartFlix+</label>
+            <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;" @change="cost=6"/>
+            <label for="clients" :class="{active:plan==='clients'}">Included Services</label>
+            <!-- <RadioButton v-model="plan" inputId="desktop" name="plan" value="desktop" style="display: none;" @change="cost=55"/>
+            <label for="desktop" :class="{active:plan==='desktop'}" style="margin-left: 8px;">Desktop</label> -->
+          </div>
+          <br>
+          <div id="accountClients" v-if="plan==='account'">
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
-              <label for="android" :class="{active:plan==='android'}" style="margin-right: 0px;"@click="openClientLink('https://vault.fartflix.com')">Vaultwarden</label>
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClientLink('https://watch.fartflix.com')">Start streaming</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
-              <label for="android" :class="{active:plan==='android'}" style="margin-right: 0px;"@click="openClientLink('https://pdf.fartflix.com/#tools-header')">PDF Editing</label>
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClientLink('https://request.fartflix.com')">Requests</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
-              <label for="android" :class="{active:plan==='android'}" style="margin-right: 0px;"@click="openClientLink('https://it-tools.fartflix.com/')">IT-Tools</label>
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClient">Clients</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
-              <label for="android" :class="{active:plan==='android'}" style="margin-right: 0px;"@click="openClientLink('https://omni-tools.fartflix.com/')">Omni-Tools</label>
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClientLink('https://status.fartflix.com')">Server status</label>
+            </div><!--<br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClientLink('https://encrypt.fartflix.com/')">File Encryption</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
-              <label for="android" :class="{active:plan==='android'}" style="margin-right: 0px;"@click="openClientLink('https://encrypt.fartflix.com/')">File Encryption</label>
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='account'}" style="margin-right: 0px;"@click="openClientLink('https://matchering.fartflix.com/')">Audio Mastering</label>
+            </div> -->
+          </div>
+          <div id="clientsClients" v-if="plan==='clients'">
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://vault.fartflix.com')">Vaultwarden</label>
             </div><br>
             <div class="label-container">
-              <RadioButton v-model="plan" inputId="android" name="plan" value="android" style="display: none;"/>
-              <label for="android" :class="{active:plan==='android'}" style="margin-right: 0px;"@click="openClientLink('https://matchering.fartflix.com/')">Audio Mastering</label>
-            </div><br v-if=admin>
-            <div class="label-container" v-if="admin">
-              <ToggleButton v-model="toggle" onLabel="Signups enabled" offLabel="Signups disabled" style="display: none;"/>
-              <label
-                :class="{ active: toggle }"
-                style="margin-left: 0px; cursor: pointer;"
-                @click="toggle = !toggle"
-              >
-                {{ toggle ? 'Signups enabled' : 'Signups disabled' }}
-              </label>
+              <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://pdf.fartflix.com/#tools-header')">PDF Editing</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://it-tools.fartflix.com/')">IT-Tools</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://omni-tools.fartflix.com/')">Omni-Tools</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://encrypt.fartflix.com/')">File Encryption</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://matchering.fartflix.com/')">Audio Mastering</label>
+            </div>
+          </div>
+          <div id="desktopClients" v-if="plan==='desktop'">
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='desktop'}" style="margin-right: 8px;"@click="openClientLink('https://github.com/DonutWare/Fladder/releases/latest')">Fladder</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='desktop'}" style="margin-right: 8px;"@click="openClientLink('https://github.com/jellyfin/jellyfin-media-player/releases/latest')">Jellyfin Media Player</label>
+            </div><br>
+            <div class="label-container">
+              <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
+              <label for="account" :class="{active:plan==='desktop'}" style="margin-right: 8px;"@click="openClientLink('https://watch.fartflix.com')">Jellyfin Web</label>
             </div>
           </div>
       </template>
@@ -121,6 +116,7 @@ const Pop = ref(null);
   </Teleport>
   <Popup ref="Pop"/>
   <Terms ref="PopT"/>
+  <Clients ref="Client"/>
 </template>
 <style>
 input, button{
@@ -140,7 +136,6 @@ input:active, button:active{
   background-color: #111111!important;
   color: #585858!important;
   --p-inputtext-color:white!important;
-  --p-togglebutton-checked-background:#111111!important;
 }
 .label-container {
   display: flex;

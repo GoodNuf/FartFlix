@@ -56,7 +56,7 @@ const onFormSubmit = async () => {
   if (!user||!user.User||!user.User.Policy)
   openPopup('Error','Invalid username or password. Please try again.');
   else if (user.User.Name==="Admin"){
-    openServicesAdmin();
+    openServices();
     console.log("Admin logged in");
   }
   else if (user.User.Policy.EnableMediaPlayback===true)

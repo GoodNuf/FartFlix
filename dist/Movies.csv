@@ -1,7 +1,19 @@
 Name,Year,Genres
+In the Blink of an Eye,2026,Drama; Science Fiction
+The Bluff,2026,Action; Adventure
+Redux Redux,2026,Science Fiction; Mystery; Thriller
+War Machine,2026,Action; Science Fiction; Thriller
+The Strangers: Chapter 3,2026,Horror; Thriller
+The Moment,2026,Music; Comedy; Thriller
+Melania,2026,Documentary
+Cold Storage,2026,Comedy; Horror; Science Fiction
 The Wrecking Crew,2026,Action; Comedy; Crime
+Shelter,2026,Action; Crime; Thriller
 Skyscraper Live,2026,Adventure
 Disneyland Handcrafted,2026,Documentary
+Clika,2026,Drama; Music
+Return to Silent Hill,2026,Horror; Mystery
+Whistle,2026,Horror; Mystery
 Mercy,2026,Science Fiction; Action; Thriller
 The Rip,2026,Crime; Thriller; Action
 28 Years Later: The Bone Temple,2026,Horror; Thriller; Science Fiction
@@ -21,6 +33,8 @@ The Housemaid,2025,Mystery; Thriller
 The SpongeBob Movie: Search for SquarePants,2025,Animation; Family; Comedy; Adventure; Fantasy
 David,2025,Animation; Family; Drama
 Goodbye June,2025,Drama
+Dead Man's Wire,2025,Crime; Drama
+Atropia,2025,Comedy; Drama
 "Silent Night, Deadly Night",2025,Horror; Thriller
 Ella McCay,2025,Comedy; Drama
 Dust Bunny,2025,Action; Fantasy; Thriller
@@ -31,6 +45,7 @@ Dhurandhar,2025,Action; Thriller
 Merrily We Roll Along,2025,Comedy; Music
 Five Nights at Freddy's 2,2025,Horror; Thriller
 Oh. What. Fun.,2025,Comedy
+Father Mother Sister Brother,2025,Comedy; Drama
 Fackham Hall,2025,Comedy; History
 Zootopia 2,2025,Adventure; Animation; Comedy; Family; Mystery
 Wake Up Dead Man: A Knives Out Mystery,2025,Thriller; Mystery; Comedy; Drama
@@ -54,6 +69,7 @@ Being Eddie,2025,Documentary
 A Very Jonas Christmas Movie,2025,Comedy; Music
 In Your Dreams,2025,Animation; Family; Comedy; Adventure; Fantasy
 I Wish You All the Best,2025,Drama; Romance
+Dragonfly,2025,Thriller; Drama
 The Choral,2025,Comedy; Drama; Music
 Sarah's Oil,2025,Drama
 Nuremberg,2025,History; Drama
@@ -71,6 +87,7 @@ Bugonia,2025,Science Fiction; Crime; Thriller
 Springsteen: Deliver Me from Nowhere,2025,Drama; Music
 Regretting You,2025,Romance; Drama
 Hedda,2025,Drama; Thriller
+Arco,2025,Animation; Science Fiction; Adventure; Fantasy; Family
 Sisu: Road to Revenge,2025,Action; War
 The Hand That Rocks the Cradle,2025,Thriller
 Vicious,2025,Horror; Thriller
@@ -158,6 +175,7 @@ The Cut,2025,Thriller; Drama
 The Conjuring: Last Rites,2025,Horror
 The Toxic Avenger Unrated,2025,Action; Comedy; Science Fiction
 Exit 8,2025,Horror; Mystery; Thriller
+A Useful Ghost,2025,Comedy; Drama; Fantasy
 The Roses,2025,Comedy; Drama; Romance
 Caught Stealing,2025,Crime; Thriller; Comedy
 Put Your Soul on Your Hand and Walk,2025,Documentary
@@ -202,6 +220,7 @@ Broken Voices,2025,Drama; Thriller
 Superman,2025,Science Fiction; Adventure; Action
 Other,2025,Horror; Thriller; Science Fiction
 Smurfs,2025,Animation; Family; Fantasy
+Videoheaven,2025,Documentary
 The Piano Accident,2025,Comedy
 Jurassic World Rebirth,2025,Science Fiction; Adventure; Action
 "Sorry, Baby",2025,Comedy; Drama
@@ -274,6 +293,7 @@ The Ballad of Wallis Island,2025,Comedy; Drama; Music
 The Woman in the Yard,2025,Horror; Mystery
 The Penguin Lessons,2025,Drama
 Death of a Unicorn,2025,Horror; Fantasy; Comedy
+A Working Man,2025,Action; Crime; Thriller
 Magazine Dreams,2025,Drama
 Screamboat,2025,Horror; Comedy
 Locked,2025,Horror; Thriller
@@ -372,6 +392,7 @@ Beetlejuice Beetlejuice,2024,Horror; Comedy; Fantasy
 Broken Bird,2024,Horror; Thriller
 Afraid,2024,Horror; Science Fiction; Thriller
 Scared Shitless,2024,Horror; Comedy
+Charlotte,2024,Thriller
 A Different Man,2024,Comedy; Drama
 Emilia Pérez,2024,Drama; Thriller
 The Crow,2024,Action; Fantasy; Horror
@@ -688,6 +709,7 @@ A Star Is Born,2018,Music; Drama; Romance
 Prospect,2018,Science Fiction
 Venom,2018,Science Fiction; Action
 Smallfoot,2018,Family; Comedy; Adventure; Animation
+The Sisters Brothers,2018,Western; Drama; Comedy
 A Simple Favor,2018,Thriller; Comedy; Mystery
 The Predator,2018,Science Fiction; Action; Thriller
 The Nun,2018,Horror
@@ -799,6 +821,7 @@ Moana,2016,Adventure; Comedy; Family; Animation
 The Accountant,2016,Crime; Thriller; Drama
 Hacksaw Ridge,2016,Drama; History; War
 Storks,2016,Adventure; Animation; Comedy; Family
+Operation Avalanche,2016,Thriller; Mystery; Comedy
 Snowden,2016,Drama; History; Crime; Thriller
 Sully,2016,Drama; History
 Kubo and the Two Strings,2016,Animation; Adventure; Family
@@ -863,6 +886,7 @@ San Andreas,2015,Action; Drama; Thriller
 Tomorrowland,2015,Adventure; Family; Mystery; Science Fiction
 Mad Max: Fury Road,2015,Action; Adventure; Science Fiction
 Pitch Perfect 2,2015,Comedy; Music
+Spy,2015,Action; Comedy; Crime
 She's Funny That Way,2015,Comedy; Romance
 Avengers: Age of Ultron,2015,Action; Adventure; Science Fiction
 Furious 7,2015,Action; Crime; Thriller
@@ -923,6 +947,7 @@ The Hunger Games: Catching Fire,2013,Adventure; Action; Science Fiction
 Thor: The Dark World,2013,Action; Adventure; Fantasy
 Inside Llewyn Davis,2013,Drama; Music
 Captain Phillips,2013,Action; Drama; Thriller
+The Dirties,2013,Comedy; Drama; Crime
 Gravity,2013,Science Fiction; Thriller; Drama
 Cloudy with a Chance of Meatballs 2,2013,Animation; Family; Comedy
 Prisoners,2013,Drama; Thriller; Crime
@@ -967,6 +992,7 @@ The Master,2012,Drama
 The Impossible,2012,Drama; Thriller; History
 The Bourne Legacy,2012,Action; Thriller
 ParaNorman,2012,Family; Animation; Adventure; Comedy
+Killing Them Softly,2012,Crime; Thriller
 The Dark Knight Rises,2012,Action; Crime; Drama; Thriller
 Ice Age: Continental Drift,2012,Animation; Comedy; Adventure; Family
 The Amazing Spider-Man,2012,Action; Adventure; Science Fiction
@@ -1089,7 +1115,7 @@ Get Smart,2008,Action; Comedy; Thriller
 The Incredible Hulk,2008,Science Fiction; Action; Adventure
 The Happening,2008,Thriller; Science Fiction
 Kung Fu Panda,2008,Animation; Family; Comedy; Action; Adventure
-Indiana Jones and the Kingdom of the Crystal Skull 2008 4K UHD BluRay 2160p DoVi HDR TrueHD 7.1 Atmos H.265-MgB,2008,Adventure; Action
+Indiana Jones and the Kingdom of the Crystal Skull,2008,Adventure; Action
 The Chronicles of Narnia: Prince Caspian,2008,Adventure; Family; Fantasy
 Iron Man,2008,Action; Science Fiction; Adventure
 21,2008,Drama; Crime
@@ -1136,9 +1162,10 @@ Flushed Away,2006,Adventure; Animation; Comedy; Family
 The Prestige,2006,Drama; Mystery; Science Fiction
 The Departed,2006,Drama; Thriller; Crime
 Open Season,2006,Animation; Family; Adventure; Comedy
-Children of Men,2006,Drama; Action; Thriller; Science Fiction
+Children of Men,2006,Action; Drama; Science Fiction; Thriller
 Stranger Than Fiction,2006,Comedy; Drama; Fantasy; Romance
 Idiocracy,2006,Comedy; Science Fiction; Adventure
+Crank,2006,Action; Thriller; Crime
 Brother Bear 2,2006,Adventure; Animation; Family
 Tales from Earthsea,2006,Animation; Fantasy; Adventure
 Little Miss Sunshine,2006,Comedy; Drama
@@ -1385,6 +1412,7 @@ Se7en,1995,Crime; Mystery; Thriller
 Clueless,1995,Comedy; Romance
 Whisper of the Heart,1995,Animation; Drama; Family
 Die Hard: With a Vengeance,1995,Action; Thriller
+Crumb,1995,Documentary
 A Goofy Movie,1995,Adventure; Comedy; Romance; Animation; Family
 Shallow Grave,1994,Crime; Thriller
 The Santa Clause,1994,Fantasy; Drama; Comedy; Family
