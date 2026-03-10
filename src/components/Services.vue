@@ -75,7 +75,7 @@ const openClient = () => {
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
-              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://pdf.fartflix.com/#tools-header')">PDF Editing</label>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://pdf.fartflix.com/#tools-header')">PDF editing</label>
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
@@ -87,11 +87,11 @@ const openClient = () => {
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
-              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://encrypt.fartflix.com/')">File Encryption</label>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://encrypt.fartflix.com/')">File encryption</label>
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="clients" name="plan" value="clients" style="display: none;"/>
-              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://matchering.fartflix.com/')">Audio Mastering</label>
+              <label for="account" :class="{active:plan==='clients'}" style="margin-right: 0px;"@click="openClientLink('https://matchering.fartflix.com/')">Audio mastering</label>
             </div>
           </div>
           <div id="desktopClients" v-if="plan==='desktop'">
