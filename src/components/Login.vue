@@ -37,7 +37,7 @@ import Popup from './Popup.vue'
 const Pop = ref(null);
 const openPopup = (txt,txt2) => {
   Pop.value.openModal(txt,txt2);
-  closeModal();
+  //closeModal();
 };
 import Services from './Services.vue'
 const Service = ref(null);
