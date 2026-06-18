@@ -128,7 +128,7 @@ const openShows = async () => {
     <template #icon>
       <MemberIcon />
     </template>
-    <template #heading>Already a FartFlix+ Member?</template>
+    <template #heading>Already a FartFlix<span style="color:#69CCC9;">+</span> Member?</template>
     <a href="#" @click.prevent="openLogins" style="color: #69CCC9;">Login</a>
     <!-- <a href="https://watch.fartflix.com" target="_blank" rel="noopener">Start streaming</a><span> | </span>
     <a href="https://request.fartflix.com" target="_blank" rel="noopener">Requests</a><span> | </span>

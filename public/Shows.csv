@@ -1,15 +1,19 @@
 Name,Year,Genres
+Spider-Noir,2026-Present,Drama; Action; Science-Fiction
+Stranger Things: Tales from '85,2026-Present,Animation; Sci-Fi & Fantasy; Mystery; Action & Adventure
+Star Wars: Maul - Shadow Lord,2026-Present,Science-Fiction
+Saturday Night Live UK,2026-Present,Comedy
 His & Hers,2026,Drama; Crime; Thriller
-The Copenhagen Test,2025-Present,Science-Fiction; Thriller; Espionage
+The Copenhagen Test,2025-Present,Espionage; Science-Fiction; Thriller
 The End of an Era,2025,Documentary
 Sean Combs: The Reckoning,2025,Documentary; Crime
-Pluribus,2025-Present,Drama; Science-Fiction
+Pluribus,2025-Present,Drama; Science-Fiction; Thriller
 Murdaugh: Death In The Family,2025-Present,Crime; Mini-Series; Thriller
 Splinter Cell: Deathwatch,2025-Present,Action & Adventure; Animation
 Chad Powers,2025-Present,Comedy; Sports
 Wayward,2025,Drama; Mini-Series; Mystery; Thriller
 Black Rabbit,2025,Drama; Mini-Series
-Task,2025-Present,Drama; Crime
+Task,2025-Present,Crime; Drama
 The Paper (2025),2025-Present,Comedy
 Long Story Short,2025-Present,Animation; Comedy
 Butterfly (2025),2025-Present,Action; Mini-Series; Thriller
@@ -22,6 +26,7 @@ SNL50: Beyond Saturday Night,2025,Documentary; Mini-Series
 The Pitt,2025-Present,Drama; Medical
 The Sticky,2024,Comedy; Crime; Drama
 Star Wars: Skeleton Crew,2024-Present,Adventure; Science Fiction
+St. Denis Medical,2024-Present,Comedy; Medical
 Hysteria! (2024),2024,Drama; Thriller
 Nobody Wants This,2024-Present,Comedy
 The Penguin,2024,Action; Crime; Mini-Series; Thriller
@@ -41,7 +46,8 @@ Love & Death,2023,Crime; Drama; Mini-Series
 BEEF,2023-Present,Comedy; Drama
 1923,2022-2025,Drama; Western
 Wednesday,2022-Present,Comedy; Drama; Fantasy; Horror; Mystery
-Tulsa King,2022-Present,Drama; Comedy; Crime
+Tulsa King,2022-Present,Comedy; Crime; Drama
+Don't Hug Me I'm Scared,2022,Comedy; Fantasy; Horror
 Monster (2022),2022-Present,Crime; Family; Thriller
 Andor,2022-2025,Action; Adventure; Drama; Science Fiction
 Cunk on Earth,2022,Comedy; Documentary
@@ -83,10 +89,10 @@ Jeffrey Epstein: Filthy Rich,2020,Crime; Documentary
 The Last Dance,2020,Drama; Sports
 Tiger King,2020-2021,Crime; Documentary
 Devs,2020,Drama; Science-Fiction; Mystery
-The Witcher,2019-Present,Drama; Action; Fantasy
+The Witcher,2019-Present,Action; Drama; Fantasy
 The Mandalorian,2019-Present,Action; Adventure; Fantasy; Science Fiction
 "Seven Worlds, One Planet",2019,Documentary
-The Boys,2019-Present,Action; Comedy; Crime; Drama; Fantasy; Science Fiction
+The Boys,2019-Present,Action; Fantasy; Adult
 Chernobyl,2019,Drama; History; Mini-Series; Thriller
 Dead to Me,2019-2022,Comedy; Drama; Mystery
 I Think You Should Leave with Tim Robinson,2019-Present,Comedy
@@ -114,9 +120,10 @@ Money Heist,2017-2021,Action; Crime; Drama; Mystery; Thriller
 The Marvelous Mrs. Maisel,2017-2023,Comedy; Drama
 Legion,2017-2019,Drama; Action; Science-Fiction
 Santa Clarita Diet,2017-2019,Comedy; Horror
+Nirvanna the Band the Show,2017-2018,Comedy
 Riverdale,2017-2023,Crime; Drama; Mystery; Romance
 The World's Most Extraordinary Homes,2017-2018,Documentary; Home and Garden; Reality
-The Grand Tour (2016),2016-2024,Comedy; Documentary; Reality; Travel
+The Grand Tour,2016-Present,Comedy; Adventure
 Planet Earth II,2016,Documentary
 The Crown,2016-2023,Drama; History
 Westworld,2016-2022,Adventure; Drama; Mystery; Science Fiction; Western
@@ -161,12 +168,14 @@ Life,2009,Documentary
 Modern Family,2009-2020,Comedy
 Community,2009-2015,Comedy
 Archer,2009-2023,Comedy; Action; Espionage
+World War II in Colour,2009,War; History
 Glee,2009-2015,Comedy; Drama; Musical
 Parks and Recreation,2009-2015,Comedy
 Party Down,2009-2023,Comedy; Drama
 Star Wars: The Clone Wars,2008-2020,Action; Adventure; Animation; Drama; Fantasy; Science Fiction
 Fringe,2008-2013,Drama; Action; Science-Fiction
 Breaking Bad,2008-2013,Crime; Drama; Thriller; Western
+Nirvana The Band The Show,2007-2010,Comedy
 The Big Bang Theory,2007-2019,Comedy; Romance
 Mad Men,2007-2015,Drama
 30 Rock,2006-2013,Comedy
@@ -202,6 +211,7 @@ Mr. Bean,1990-1995,Comedy; Family
 The Simpsons,1989-Present,Animation; Comedy
 Seinfeld,1989-1998,Comedy
 Unsolved Mysteries,1988-Present,Crime; Documentary; Drama; Mystery; Reality; Thriller
+Anne of Green Gables,1985,Drama; Family
 The Muppet Show,1976-Present,Comedy; Children
 Saturday Night Live,1975-Present,Comedy
 The Prisoner,1967-1968,Drama; Mystery; Science Fiction; Thriller
