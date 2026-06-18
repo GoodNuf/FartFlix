@@ -105,7 +105,7 @@ const openClient = () => {
             </div><br>
             <div class="label-container">
               <RadioButton v-model="plan" inputId="account" name="plan" value="account" style="display: none;"/>
-              <label for="account" :class="{active:plan==='desktop'}" style="margin-right: 8px;"@click="openClientLink('https://watch.fartflix.com')">Jellyfin Web</label>
+              <label for="account" :class="{active:plan==='desktop'}" style="margin-right: 8px;"@click="openClientLink('https://watch.fartflix.com/web/#/login')">Jellyfin Web</label>
             </div>
           </div>
       </template>
