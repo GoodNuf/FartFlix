@@ -67,7 +67,7 @@ const onFormSubmit = async () => {
   loader.style.display = 'block';
   loading.value = true;
   try{
-    emailjs.sendForm('apple','pay',form,'rQQm5NSHaWQQ46E1J')
+    emailjs.sendForm('apple','fartflix',form,'LJMQj7PwVzyQgU9j6')
     openPopup('Success!','Thank you for signing up to FartFlix+! Your application has been submitted. You will be contacted if your application is approved.');
   }
   catch(error) {
@@ -233,9 +233,6 @@ onMounted(async () => {
           <!-- <iframe src='https://pay.fartflix.com/apps/3W21e1MBpzoSHPc9U6vNW4PxMHxx/pos' style='max-width: 100%; border: 0;'></iframe> -->
           <Button type="submit" severity="secondary" label="Submit" />
         </Form>
-      </template>
-      <template #body v-if="!toggle">
-        <p>Signups are currently closed. Sorry for the inconvenience.</p>
       </template>
       <template #footer>
         <button @click="showModal = false">Close</button>
